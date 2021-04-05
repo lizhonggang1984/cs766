@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0fc5ee03-41af-4599-be6c-468cec016a66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MASKRCNN/seg_car_by_Car.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MASKRCNN/test_images/b1d22449-117aa773-0000001.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MASKRCNN/APtesting_car_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/MASKRCNN/APtesting_car_0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MASKRCNN/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/MASKRCNN/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MASKRCNN/seg_car.py" beforeDir="false" afterPath="$PROJECT_DIR$/MASKRCNN/seg_car.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="e185557a-3dab-45d7-9f29-07a1bf884614" />
+  <component name="ProjectId" id="1oWXB973WdxRSmEvbsyQT8Kl9XX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MASKRCNN" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\python_projects\cs766" />
+      <recent name="F:\python_projects\cs766\datasets\test" />
+      <recent name="F:\python_projects\cs766\datasets\test\val" />
+      <recent name="F:\python_projects\cs766\indexes" />
+      <recent name="F:\python_projects\cs766\datasets\car2\total_val" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\python_projects\cs766\MASKRCNN" />
+      <recent name="F:\python_projects\cs766" />
+      <recent name="F:\python_projects\cs766\test_images" />
+      <recent name="F:\python_projects\cs766\MASKRCNN\datasets\test2" />
+      <recent name="F:\python_projects\cs766\MASKRCNN\datasets\car2\val" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.seg_car_by_Car (1)">
+    <configuration name="APtesting_car_0 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cs766" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MASKRCNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MASKRCNN/APtesting_car_0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="APtesting_car_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cs766" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/APtesting_car_0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="seg_car (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cs766" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MASKRCNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MASKRCNN/seg_car.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="seg_car_by_Car (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cs766" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MASKRCNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MASKRCNN/seg_car_by_Car.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="seg_car_by_Car" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cs766" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/seg_car_by_Car.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.APtesting_car_0" />
+      <item itemvalue="Python.seg_car (1)" />
+      <item itemvalue="Python.APtesting_car_0 (1)" />
+      <item itemvalue="Python.seg_car_by_Car" />
+      <item itemvalue="Python.seg_car_by_Car (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.seg_car_by_Car (1)" />
+        <item itemvalue="Python.seg_car_by_Car" />
+        <item itemvalue="Python.seg_car (1)" />
+        <item itemvalue="Python.APtesting_car_0 (1)" />
+        <item itemvalue="Python.APtesting_car_0" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fc5ee03-41af-4599-be6c-468cec016a66" name="Default Changelist" comment="" />
+      <created>1613403181575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613403181575</updated>
+      <workItem from="1613403182791" duration="3972000" />
+      <workItem from="1613407254174" duration="13206000" />
+      <workItem from="1613662464645" duration="13000" />
+      <workItem from="1615135088769" duration="3117000" />
+      <workItem from="1615139377279" duration="25058000" />
+      <workItem from="1615178402499" duration="6978000" />
+      <workItem from="1615216607225" duration="50316000" />
+      <workItem from="1615335819148" duration="2092000" />
+      <workItem from="1615338011344" duration="650000" />
+      <workItem from="1615338830680" duration="7991000" />
+      <workItem from="1615421064669" duration="2451000" />
+      <workItem from="1615425388825" duration="4914000" />
+      <workItem from="1615470247549" duration="66000" />
+      <workItem from="1615475931871" duration="2604000" />
+      <workItem from="1615512212994" duration="8000" />
+      <workItem from="1615521420291" duration="5482000" />
+      <workItem from="1615527090594" duration="4502000" />
+      <workItem from="1615561170828" duration="870000" />
+      <workItem from="1615569672944" duration="17469000" />
+      <workItem from="1615664745388" duration="2228000" />
+      <workItem from="1615734294955" duration="318000" />
+      <workItem from="1615743686275" duration="263000" />
+      <workItem from="1616021971289" duration="8448000" />
+      <workItem from="1616096762566" duration="6468000" />
+      <workItem from="1616127037605" duration="1468000" />
+      <workItem from="1616128617513" duration="1064000" />
+      <workItem from="1616129733530" duration="3456000" />
+      <workItem from="1616135171893" duration="1391000" />
+      <workItem from="1616163151569" duration="4225000" />
+      <workItem from="1616347564525" duration="18245000" />
+      <workItem from="1616377789004" duration="9312000" />
+      <workItem from="1616450507845" duration="5326000" />
+      <workItem from="1616507762524" duration="10870000" />
+      <workItem from="1616549281711" duration="3513000" />
+      <workItem from="1616608250707" duration="2887000" />
+      <workItem from="1616943149865" duration="52000" />
+      <workItem from="1617123555473" duration="627000" />
+      <workItem from="1617124696383" duration="11000" />
+      <workItem from="1617318568930" duration="12274000" />
+      <workItem from="1617378515392" duration="593000" />
+      <workItem from="1617396310886" duration="4326000" />
+      <workItem from="1617542498951" duration="4826000" />
+      <workItem from="1617600371072" duration="53000" />
+      <workItem from="1617600534430" duration="7178000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="48" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616519351664">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="48" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1616519351664" />
+    <state x="1437" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1615246748166" />
+    <state x="415" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613405397422">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="415" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1613405397422" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615308807877">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1615308807877" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615163881740" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1617600422376">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1617600422376" />
+    <state x="1827" y="124" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1615321757140" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1617406159788" />
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom" timestamp="1617646496682">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1617646496682" />
+    <state width="1300" height="211" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1616354137917" />
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1617406161211" />
+    <state width="1322" height="182" key="GridCell.Tab.0.center" timestamp="1617646496682">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="182" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1617646496682" />
+    <state width="1300" height="211" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1616354137917" />
+    <state width="1322" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1617406161211" />
+    <state width="1322" height="182" key="GridCell.Tab.0.left" timestamp="1617646496682">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="182" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1617646496682" />
+    <state width="1300" height="211" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1616354137917" />
+    <state width="1322" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1617406161211" />
+    <state width="1322" height="182" key="GridCell.Tab.0.right" timestamp="1617646496682">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="182" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1617646496682" />
+    <state width="1300" height="211" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1616354137917" />
+    <state width="1322" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1617406161211" />
+    <state width="1322" height="216" key="GridCell.Tab.1.bottom" timestamp="1616527638757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1616527638757" />
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1615335691832" />
+    <state width="1322" height="216" key="GridCell.Tab.1.center" timestamp="1616527638757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1616527638757" />
+    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1615335691832" />
+    <state width="1322" height="216" key="GridCell.Tab.1.left" timestamp="1616527638757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1616527638757" />
+    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1615335691832" />
+    <state width="1322" height="216" key="GridCell.Tab.1.right" timestamp="1616527638757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1616527638757" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1360.768@1366.0.1360.768" timestamp="1615335691832" />
+    <state x="368" y="0" width="998" height="728" key="SettingsEditor" timestamp="1616195198916">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="368" y="0" width="998" height="728" key="SettingsEditor/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1616195198916" />
+    <state x="290" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1615163005927">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="290" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1615155060183" />
+    <state x="290" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1615163005927" />
+    <state x="1520" y="0" width="933" height="663" key="dock-window-1" timestamp="1615259924279">
+      <screen x="1366" y="0" width="1360" height="768" />
+    </state>
+    <state x="1520" y="0" width="933" height="663" key="dock-window-1/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1615259924279" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1613405762455">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1613405762455" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cs766$combine_json.coverage" NAME="combine_json Coverage Results" MODIFIED="1615570722859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$convert__2_.coverage" NAME="convert (2) Coverage Results" MODIFIED="1616360818921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doconvertion" />
+    <SUITE FILE_PATH="coverage/cs766$seg_by_COCO_phone.coverage" NAME="seg_by_COCO_phone Coverage Results" MODIFIED="1615308501954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$process_json_conversion_2.coverage" NAME="process_json_conversion_2 Coverage Results" MODIFIED="1616028355261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car_1.coverage" NAME="APtesting_car_1 Coverage Results" MODIFIED="1616128509558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$visualize.coverage" NAME="visualize Coverage Results" MODIFIED="1615156882939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mrcnn" />
+    <SUITE FILE_PATH="coverage/cs766$segBalloon__1_.coverage" NAME="segBalloon (1) Coverage Results" MODIFIED="1615167090266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$convert.coverage" NAME="convert Coverage Results" MODIFIED="1616357880878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets/car3/val" />
+    <SUITE FILE_PATH="coverage/cs766$seg_phone_by_COCO.coverage" NAME="seg_phone_by_COCO Coverage Results" MODIFIED="1615306844018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$seg_balloon_by_Balloon.coverage" NAME="seg_balloon_by_Balloon Coverage Results" MODIFIED="1615308727661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car_coco.coverage" NAME="APtesting_car_coco Coverage Results" MODIFIED="1615528929915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car_20.coverage" NAME="APtesting_car_20 Coverage Results" MODIFIED="1615529731113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1616129153105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car_2.coverage" NAME="APtesting_car_2 Coverage Results" MODIFIED="1616132596093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$process_json.coverage" NAME="process_json Coverage Results" MODIFIED="1615260184512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$extract_json.coverage" NAME="extract_json Coverage Results" MODIFIED="1616519170377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indexes" />
+    <SUITE FILE_PATH="coverage/cs766$seg_car.coverage" NAME="seg_car Coverage Results" MODIFIED="1617326280583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$car.coverage" NAME="car Coverage Results" MODIFIED="1617397199689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$demo.coverage" NAME="demo Coverage Results" MODIFIED="1615159236950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car_0.coverage" NAME="APtesting_car_0 Coverage Results" MODIFIED="1617399519290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$seg_car__1_.coverage" NAME="seg_car (1) Coverage Results" MODIFIED="1617607277984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MASKRCNN" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_coco.coverage" NAME="APtesting_coco Coverage Results" MODIFIED="1615526712707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$rbf.coverage" NAME="rbf Coverage Results" MODIFIED="1616195893170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$gatherPics.coverage" NAME="gatherPics Coverage Results" MODIFIED="1616355220486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/json_robin" />
+    <SUITE FILE_PATH="coverage/cs766$seg_car_by_COCO__1_.coverage" NAME="seg_car_by_COCO (1) Coverage Results" MODIFIED="1615231621474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car_0__1_.coverage" NAME="APtesting_car_0 (1) Coverage Results" MODIFIED="1617601565376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MASKRCNN" />
+    <SUITE FILE_PATH="coverage/cs766$seg_car_by_Car.coverage" NAME="seg_car_by_Car Coverage Results" MODIFIED="1617608911887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$balloon.coverage" NAME="balloon Coverage Results" MODIFIED="1615476739135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$car_0.coverage" NAME="car_0 Coverage Results" MODIFIED="1615528987356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$convert__1_.coverage" NAME="convert (1) Coverage Results" MODIFIED="1616357100650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets/car3/train" />
+    <SUITE FILE_PATH="coverage/cs766$111.coverage" NAME="111 Coverage Results" MODIFIED="1615608290504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$gatherPics2.coverage" NAME="gatherPics2 Coverage Results" MODIFIED="1616355302863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/json_robin" />
+    <SUITE FILE_PATH="coverage/cs766$test.coverage" NAME="test Coverage Results" MODIFIED="1616104643948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$seg_car_by_COCO.coverage" NAME="seg_car_by_COCO Coverage Results" MODIFIED="1615347019243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$car__1_.coverage" NAME="car Coverage Results" MODIFIED="1615260220875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$seg_by_COCO.coverage" NAME="seg_by_COCO Coverage Results" MODIFIED="1615307664715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$seg_objects_by_COCO__1_.coverage" NAME="seg_objects_by_COCO (1) Coverage Results" MODIFIED="1615315075643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$main.coverage" NAME="main Coverage Results" MODIFIED="1615137981488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$seg_car_by_Car__1_.coverage" NAME="seg_car_by_Car (1) Coverage Results" MODIFIED="1617610139348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MASKRCNN" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting.coverage" NAME="APtesting Coverage Results" MODIFIED="1615525906159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$APtesting_car.coverage" NAME="APtesting_car Coverage Results" MODIFIED="1615561298345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs766$segBallon.coverage" NAME="segBallon Coverage Results" MODIFIED="1615166242269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
