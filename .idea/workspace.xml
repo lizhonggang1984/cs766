@@ -10,14 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fc5ee03-41af-4599-be6c-468cec016a66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MASKRCNN/seg_car_by_Car.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MASKRCNN/test_images/b1d22449-117aa773-0000001.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MASKRCNN/APtesting_car_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/MASKRCNN/APtesting_car_0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MASKRCNN/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/MASKRCNN/car.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MASKRCNN/seg_car.py" beforeDir="false" afterPath="$PROJECT_DIR$/MASKRCNN/seg_car.py" afterDir="false" />
-    </list>
+    <list default="true" id="0fc5ee03-41af-4599-be6c-468cec016a66" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,6 +245,7 @@
       <workItem from="1617542498951" duration="4826000" />
       <workItem from="1617600371072" duration="53000" />
       <workItem from="1617600534430" duration="7178000" />
+      <workItem from="1617647236017" duration="622000" />
     </task>
     <servers />
   </component>
