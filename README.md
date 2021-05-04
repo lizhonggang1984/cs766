@@ -172,7 +172,7 @@ The following are the prediction results of 1000 testing data based on the train
 ### 3.2.2 YOLOv4 Model 
 The following shows the result of YOLOv4 ran with the same dataset. In this part. We split testing data into daytime and nighttime. The  models were trained by 6 epoches, where each one includes 1000 steps. The model didn’t perform better when set a bit more epoches. And therefore we stopped the training in a relatively short epoch. The training took about 1 hour during busy hours, which is much faster than faster R-CNN. Based on our result, we first find out that this light-weighted has worse performance, where recall and ap are lower in general. Besides, we did not see a significant difference when it comes to the performance of cars and traffic lights. However, the traffic signs, rider, motor, and person ones have different performance, which means that their features may be different between two scenarios.
 #
-<img src="/display/table5.png" alt="table5"/>
+<img src="/display/table5.png" alt="table5" width="1000"/>
 In table 5, we see that the Faster RCNN model prediction performance depends on the object, but it performs well on detecting cars. And Faster RCNN performs better than YOLOV4.
 
 ### 3.2.3 YOLOv5 Model
