@@ -66,7 +66,7 @@ For mask tasks, we also split data into day-time images and night-time images  (
 
 **Figure 6: Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**
 
-2.3 Hardware and Workflow
+## 2.3 Hardware and Workflow
 In our study, we submitted our jobs to Euler cluster (WACC Computational Infrastructure) and CHTC's high-throughput computing servers and ran with a single GPU. We further set and fixed our configurations by anaconda (conda create) and docker image   
 
 To accelerate our training, we  used pre-trained weighting from MS COCO to start our training of car image. Then, we inputted our processed data to different models and tried to generate good performance ones by adjusting hyperparameters. Table 3 lists the parameters we changed during the training process. 
@@ -77,7 +77,6 @@ To accelerate our training, we  used pre-trained weighting from MS COCO to start
 In the end, we validated and tested our results by the generated model files (*.ptx, *.h5). Figure 7 shows the high-level workflow that we did for this study.
 <img src="/display/figure7.png" alt="figure7"/>
 **Figure 7:  Working flow of our training and segmentation to use Mask-RCNN in BDD datasets. We obtained images from BDD dataset and generated Docker images. Then we submit our job to the CHTC/Euler for model training. Finally we tested our model for car segmentation.**
-
 
 
 ## 2.4 Model Implementation
