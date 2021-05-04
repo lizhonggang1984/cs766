@@ -207,8 +207,8 @@ Figure 20: Compare the instance segmentation and object detection results based 
 
 # 4. Conclusion
 
-**For image segmentation tasks, we got a good result by 200 well-annotated car dataset. <br\>
-We see that the results of daytime/night data differ. We could also look into the performance of other objects in the future.
+**For image segmentation tasks, we got a good result by 200 well-annotated car dataset. <br/>
+We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.
 <br/>
 For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.**
 
