@@ -57,7 +57,7 @@ Our dataset and model includes two kinds of annotation and prediction: mask and 
 
 <img src="/display/table2.png" alt="table2" width="1000"/>
 Table2 Images used from BDD dataset.
-\
+<br/> 
 For mask tasks, we also split data into day-time images and night-time images  (shown in Figure 6). For compatibility with YOLO formatting, we used Roboflow to convert our annotation to box regions. 
 
 <img src="/display/figure6.png" alt="figure6"/>
