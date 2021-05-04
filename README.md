@@ -1,6 +1,5 @@
 # Segmentation And Car Detection in Autonomous Driving
 #### Zichen Qiu (zqiu3@wisc.edu), Jiun-Ting Chen (jchen857@wisc.edu), Zhonggang Li (zli769@wisc.edu), Yimiao Cao (cao223@wisc.edu)
-#
 
 ### Presentation: http://www.zichenqiu.com/uploads/1/3/6/7/13670916/cs_766_final_project__1_.pptx.pdf
 ### Github Repo: https://github.com/lizhonggang1984/cs766
