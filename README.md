@@ -56,8 +56,9 @@ There are multiple datasets available for autonomous driving algorithm developme
 Our dataset and model includes two kinds of annotation and prediction: mask and bounding box. For the mask prediction task, we choose Multi-object tracking (MOTS) 2020 images and labels from BDD as our training, validation and testing data source. Since the images are tracking images, we select the first picture from each scene. In total we obtained 157 images as training dataset, 39 images as validation dataset and 10 images as testing dataset (Table 2). Regarding the bounding box task, we use another 10,000 dataset in BDD and split the dataset into 8000 training data, 1000 validation data, and 1000 testing data, where the ratio of day/night in the testing data is close to 1. 
 
 <img src="/display/table2.png" alt="table2" width="1000"/>
-**Table2 Images extracted and used in our study.**.
+Table2 Images extracted and used in our study.
 
+<br/> 
 <br/> 
 For mask tasks, we also split data into day-time images and night-time images  (shown in Figure 6). For compatibility with YOLO formatting, we used Roboflow to convert our annotation to box regions. 
 
