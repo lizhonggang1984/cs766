@@ -109,8 +109,8 @@ Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweigh
 **Figure 10: The main structure of YOLOv5.**
 
 <img src="/display/figure12.jpg" alt="figure12"/>
-**Figure 12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications. This figure is adapted from https://www.techleer.com/articles.**
 
+**Figure 12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications. This figure is adapted from https://www.techleer.com/articles.**
 
 We trained our data with v4 and v5 in this study. For v4, we also referred to the model and the pre-trained weighting  that was provided in the mmdection codebase. For v5, we followed the following public Github repo. 
 
