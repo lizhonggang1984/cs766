@@ -99,9 +99,9 @@ In our study, we forked a Mask-RCNN code from a public Github repo  and made cha
 
 ### 2.4.3 YOLO
 Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 11). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
-
+<p align="center">
 <img src="/display/figure12.jpg" alt="figure12" width="600"/>
-
+</p>
 **Figure 12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications. This figure is adapted from https://www.techleer.com/articles.**
 
 We trained our data with v4 and v5 in this study. For v4, we also referred to the model and the pre-trained weighting  that was provided in the mmdection codebase. For v5, we followed the following public Github repo. 
@@ -115,8 +115,9 @@ We split images by day/night time and trained them with different models. We the
 <img src="/display/formula.png" alt="formula"/>
 <br/>
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 13 illustrates the idea.  
-
+<p align="center">
 <img src="/display/figure13.png" alt="figure13"/>
+</p>
 Figure 13: Definition of Intersection over Union.
 
 # 3. Results 
@@ -139,7 +140,6 @@ However, the increase of steps and epoch number will significantly increase the 
  
 <img src="/display/table4.png" alt="table4"/>
 Table 4 CPU and GPU running time for Mask-RCNN.
-
 
 So we tested different hyperparameters and tried to get the best-fit model as our Mask-RCNN model. In figure 16, we observed that with 100 steps and 30 epoch, we were able to obtain the best accuracy for validation data. And 100 steps and 50 epochs may be overfitting and lead to reduced mAP for validating dataset.
 
