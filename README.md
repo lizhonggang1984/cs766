@@ -25,7 +25,9 @@ Image segmentation is an important subject of computer vision. It is the process
 
 #
 The basic architecture in image segmentation consists of an encoder and a decoder. The encoder extracts features from the image through filters. and decoder is responsible for generating the final output which is usually a segmentation mask containing the outline of the object (Figure 3). 
+#
 <img src="/display/figure3.png" alt="figure3"/>
+
 **Figure 3 Basic architecture of image segmentation. An architecture consists of encoder layer and decoder layer(Badrinarayanan, Kendall et al. 2017)**.
 
 There are various segmentation methods proposed in recent years to solve image segmentation problems in computer vision. These algorithms include threshold method (Tobias and Seara 2002), edge-based method (Ognard, Mesrar et al. 2019), region-based method (Fang, Liu et al. 2021) clustering based method (Arifin and Asano 2006) and artificial neural network-based method (Yang and Yu 2021) (Cervantes-Sanchez, Cruz-Aceves et al. 2019) (Perez-Perez, Golparvar-Fard et al. 2019) (Ozan and Iheme 2019). 
