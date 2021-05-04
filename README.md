@@ -89,23 +89,23 @@ In the beginning, Faster RCNN used a conv+relu+pooling structure to extract the 
 In our study, we referred to a model built in the mmdetction codebase, which is implemented in Pytorch, and adjusted hyperparameters to train our dataset. 
 
 ### 2.4.2 Mask-RCNN
-As shown in Figure 9, Mask R-CNN is a fully convolutional network added to the top of the CNN features of a faster R-CNN to generate a mask segmentation output. Compared to Fast-RCNN, Mask R-CNN has an additional branch for predicting segmentation masks on each ROI in a pixel to pixel manner. ROI Align is used to align the ROI pool more precisely. After the generation of masks, ROI align combines them with classification and bounding boxes from faster R-CNN to generate the precise segmentation (Ahmed, Gulliver et al. 2020). The current version of Mask-RCNN is using Tensorflow and Keras for its library and best use GPU for its computation due to the large parameter numbers, 
+As shown in Figure 8, Mask R-CNN is a fully convolutional network added to the top of the CNN features of a faster R-CNN to generate a mask segmentation output. Compared to Fast-RCNN, Mask R-CNN has an additional branch for predicting segmentation masks on each ROI in a pixel to pixel manner. ROI Align is used to align the ROI pool more precisely. After the generation of masks, ROI align combines them with classification and bounding boxes from faster R-CNN to generate the precise segmentation (Ahmed, Gulliver et al. 2020). The current version of Mask-RCNN is using Tensorflow and Keras for its library and best use GPU for its computation due to the large parameter numbers, 
 <p align="center">
 <img src="/display/figure9.png" alt="figure9" width = "800" />
 </p>
 
-**Figure 9 The Mask R-CNN framework for instance segmentation.**
+**Figure 8 The Mask R-CNN framework for instance segmentation.**
 
 
 In our study, we forked a Mask-RCNN code from a public Github repo  and made changes to specify CAR as our segmentation class. The annotation files of Seg-Track images are converted to specified format for training and validation. 
 
 ### 2.4.3 YOLO
-Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 11). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
+Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 9). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
 <p align="center">
 <img src="/display/figure12.jpg" alt="figure12" width="600"/>
 </p>
 
-**Figure12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.**
+**Figure9: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.**
 
 We trained our data with v4 and v5 in this study. For v4, we also referred to the model and the pre-trained weighting  that was provided in the mmdection codebase. For v5, we followed the following public Github repo. 
 
@@ -117,19 +117,19 @@ We split images by day/night time and trained them with different models. We the
 <br/>
 <img src="/display/formula.png" alt="formula"/>
 <br/>
-The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 13 illustrates the idea.  
+The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 10 illustrates the idea.  
 <p align="center">
 <img src="/display/figure13.png" alt="figure13"/>
 </p>
-Figure 13: Definition of Intersection over Union.
+Figure 10: Definition of Intersection over Union to calculate mAP.
 
 # 3. Results 
 ## 3.1 Mask-RCNN (for Car Image Segmentation)
 ### 3.1.1 COCO pre-trained weighting: poor performance 
-We started our training using pre-weight based on MS COCO training. COCO is a large-scale object detection, segmentation and captioning dataset with over 330K images. It uses 80 classes and generates 80 categories ready for detection. So we first used the pre-weight for detection of our images (Figure 14), and found some missing labels of cars in our car datasets. The mAP based on the validation dataset for COCO pre-weight for car segmentation is only 0.4024. Thus we need to train our own car datasets to achieve better performance for our Mask-RCNN model.
+We started our training using pre-weight based on MS COCO training. COCO is a large-scale object detection, segmentation and captioning dataset with over 330K images. It uses 80 classes and generates 80 categories ready for detection. So we first used the pre-weight for detection of our images (Figure 11), and found some missing labels of cars in our car datasets. The mAP based on the validation dataset for COCO pre-weight for car segmentation is only 0.4024. Thus we need to train our own car datasets to achieve better performance for our Mask-RCNN model.
 
 <img src="/display/figure14.png" alt="figure14"/>
-Figure 14 Applying COCO pre-weight for car segmentation task in Mask-RCNN. The mAP calculated based on validation dataset for pre weight is only 0.4024, which can’t predict the car on the road. We can observe the red car in the right of the image and the truck in the back can’t be segmented as car labeling properly.
+Figure 11 Applying COCO pre-weight for car segmentation task in Mask-RCNN. The mAP calculated based on validation dataset for pre weight is only 0.4024, which can’t predict the car on the road. We can observe the red car in the right of the image and the truck in the back can’t be segmented as car labeling properly.
 
 
 ### 3.1.2 Training with new processed data: better performance
@@ -137,7 +137,7 @@ Next, we added 200 images from the BDD database to train a new model based on th
 
 <img src="/display/figure15.png" alt="figure15"/>
 
-Figure 15 Mask-RCNN model performs better than pre-trained model. The mAP for COCO pre-trained model and trained Mask-RCNN model are 0.40 and 0.46, respectively. From above images, we can see (a) COCO model fails to detect the red cars in the right of image but (b) our trained model is able to detect it.
+Figure 12 Mask-RCNN model performs better than pre-trained model. The mAP for COCO pre-trained model and trained Mask-RCNN model are 0.40 and 0.46, respectively. From above images, we can see (a) COCO model fails to detect the red cars in the right of image but (b) our trained model is able to detect it.
 
 However, the increase of steps and epoch number will significantly increase the running time of the training process. In our initial running, we attempted to finish our task in a CPU condor, but that can’t be done within 72 hours limit. We found the running time of Mask-RCNN can be significantly reduced by using a GPU device. Table 4 showed the running time for CPU and GPU
  <p align="center">
@@ -145,31 +145,31 @@ However, the increase of steps and epoch number will significantly increase the 
  </p>
 Table 4 CPU and GPU running time for Mask-RCNN.
 
-So we tested different hyperparameters and tried to get the best-fit model as our Mask-RCNN model. In figure 16, we observed that with 100 steps and 30 epoch, we were able to obtain the best accuracy for validation data. And 100 steps and 50 epochs may be overfitting and lead to reduced mAP for validating dataset.
+So we tested different hyperparameters and tried to get the best-fit model as our Mask-RCNN model. In figure 13, we observed that with 100 steps and 30 epoch, we were able to obtain the best accuracy for validation data. And 100 steps and 50 epochs may be overfitting and lead to reduced mAP for validating dataset.
 <p align="center">
 <img src="/display/figure16.png" alt="figure16"/>
  </p>
-Figure 16 Performance evaluation of different steps and epoch. With more epochs and more steps, the accuracy for training data is increasing, but the optimum setup is 100 x 30epoch. 100 x 50 epoch caused a drop of mAP in validation data, indicating the existence of overfitting.
+Figure 13 Performance evaluation of different steps and epoch. With more epochs and more steps, the accuracy for training data is increasing, but the optimum setup is 100 x 30epoch. 100 x 50 epoch caused a drop of mAP in validation data, indicating the existence of overfitting.
 
 
 ### 3.1.3 Highly Dependent Different Scenario: Day/Night
-In the next step, we split our validation dataset into two groups, day-time group and night-time group. Not surprisingly, we found that the difference of mAP between two groups is significant (0.54 vs 0.38), which might be due to lighting and resolution at night time (Figure 17, 18).
+In the next step, we split our validation dataset into two groups, day-time group and night-time group. Not surprisingly, we found that the difference of mAP between two groups is significant (0.54 vs 0.38), which might be due to lighting and resolution at night time (Figure 14, 15).
 <p align="center">
 <img src="/display/figure17.png" alt="figure17" align="center"/>
 </p>
-Figure 17 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
+Figure 14 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
 <img src="/display/figure182.png" alt="figure182"/>
-Figure 18 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
+Figure 15 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
 
 ### 3.1.4 Improved mAP When Training by Separate Datasets
 
-Then we split the training data into day-time and night-time groups and train our Mask-RCNN model separately. This strategy, although slightly increased the mAP for night-time images, decreased the day-time images segmentation accuracy, which might be due to the relatively small of our dataset and shrink of the total images number in the separate training process (Figure 19, 20).
+Then we split the training data into day-time and night-time groups and train our Mask-RCNN model separately. This strategy, although slightly increased the mAP for night-time images, decreased the day-time images segmentation accuracy, which might be due to the relatively small of our dataset and shrink of the total images number in the separate training process (Figure 16, 17).
 <p align="center">
 <img src="/display/figure19.png" alt="figure19" align="center"/>
  </p>
-Figure 19 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
+Figure 16 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
 <img src="/display/figure20.png" alt="figure20" width="1000"/>
-Figure 20 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
+Figure 17 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
 
 ## 3.2 Object detection with Bounding Box Annotation
 ### 3.2.1 Faster RCNN
@@ -187,24 +187,24 @@ In table 5, we see that the Faster RCNN model prediction performance depends on 
 YOLOv5 is the latest version of the series of models. We trained our car model in YOLOV5 starting from the pre-weight given by COCO dataset (the big pre-weight, yolov5x.pt). Due to the time limit, we cannot make it to transform the 10K dataset to the specific format for this model. Hence, we used the 200 samples one instead. In the training process, users could visualize the segmentation and make changes.
 
 
-The most important character of YOLOv5 is its high performance. We found the training process is faster and efficient than Mask-RCNN. For epochs of 500, it only takes 1 hour to finish the training.  The trained model obtained pretty good accuracy (mAP at around 0.85 for training dataset and 0.44 for validation dataset) and PR-curve area can be 0.821 (Figure 21), suggestive of its acceptable performance. However, the performance is worse than YOLOv4. Although it’s not a good idea to compare the results of different datasets. It is also reasonable to infer that there may exist room for improvement. We may want to do more model tuning in our future works.
+The most important character of YOLOv5 is its high performance. We found the training process is faster and efficient than Mask-RCNN. For epochs of 500, it only takes 1 hour to finish the training.  The trained model obtained pretty good accuracy (mAP at around 0.85 for training dataset and 0.44 for validation dataset) and PR-curve area can be 0.821 (Figure 18), suggestive of its acceptable performance. However, the performance is worse than YOLOv4. Although it’s not a good idea to compare the results of different datasets. It is also reasonable to infer that there may exist room for improvement. We may want to do more model tuning in our future works.
 
 
 <img src="/display/figure21.png" alt="figure21"/>
-Figure 21:  Precision, recall, mAP and PR-curve of YOLOV5. The mAP for training data can come to 0.9 with 500 epochs, and the PR-curve area can come to 0.821 in our training model.
+Figure 18:  Precision, recall, mAP and PR-curve of YOLOV5. The mAP for training data can come to 0.9 with 500 epochs, and the PR-curve area can come to 0.821 in our training model.
 
 
 ## 3.3 Comparison of Mask-RCNN and YOLOv5 
-As we can see in Table 5, YOLOv5 is a much faster algorithm to train our own car model and get acceptable segmentation than Mask-RCNN. As shown in Figure 22 and Figure 23, YOLOV5 can also finish the car detection task in a faster and efficient way for cars under both day-time and night-time conditions, which might be more useful in future autonomous driving context. 
+As we can see in Table 5, YOLOv5 is a much faster algorithm to train our own car model and get acceptable segmentation than Mask-RCNN. As shown below, YOLOV5 can also finish the car detection task in a faster and efficient way for cars under both day-time and night-time conditions, which might be more useful in future autonomous driving context. 
 
 The major difference between Mask-RCNN and YOLOV5 is they are focusing on different problems. Mask-RCNN is powerful in instance segmentation and YOLOV5 is more efficient in object detection. They can both detect the object of interest in the images but YOLOV5 doesn’t have the function to finish the object segmentation. There are many extensions of YOLO architecture for instance segmentation tasks, such as SEG-YOLO or YOLACT. For instance, SEG-YOLO is able to conduct instance segmentation by adding a fully connected neural network to YOLOV3. Due to the time of this project, these extensions are beyond the scope of this study.
 
 
 <img src="/display/figure22.png" alt="figure22"/>
-Figure 22:  Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for day-time images. (a, b) Mask-RCNN segmented images (c,d) YOLOV5  object detection images.
+Figure 19:  Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for day-time images. (a, b) Mask-RCNN segmented images (c,d) YOLOV5  object detection images.
 
 <img src="/display/figure23.png" alt="figure23"/>
-Figure 23: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
+Figure 20: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
 
 # 4. Conclusion
 
