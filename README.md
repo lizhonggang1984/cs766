@@ -113,7 +113,7 @@ We trained our data with v4 and v5 in this study. For v4, we also referred to th
 We made changes to the data.yaml file and the configuration file in model to better accommodate car class segmentation and detection. Similar to our implementation method in Mask-RCNN, we generate a docker image with pytorch library and train our model in CHTC. The pre-trained weights from COCO named yolov5x.pt  is used to accelerate our training. After training, the model file (named as best.pt) will be saved for our following evaluation and segmentation task. 
 
 
-# 2.5 Evaluation Metric
+## 2.5 Evaluation Metric
 We split images by day/night time and trained them with different models. We then evaluated the model by mean Average Precision (mAP) and compared the result in different scenarios. In statistics, precision measures how accurate your predictions are, that is, the percentage of your predictions are correct. The definition of precision are shown as follows:
 <br/>
 <img src="display/formula.png" alt="formula"/>
