@@ -206,20 +206,16 @@ Figure 19:  Compare the instance segmentation and object detection results based
 Figure 20: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
 
 # 4. Conclusion
-
-## 4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset. <br/>
+## 4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset.
 ## 4.2 We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.
-<br/>
-## 4.3 For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.**
+## 4.3 For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.
 
-# 5. Future works: 
+# 5. Future works
 ## 5.1 Use larger dataset to see if the performance of mask-rcnn could be even better. 
-<br/>
+
 ## 5.2 Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
-<br/>
 ## 5.3 It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
-<br/>
-## 5.4 Do more model tuning or modify the model structure to gain performance.**
+## 5.4 Do more model tuning or modify the model structure to gain performance.
 
 <br/>
 
@@ -228,37 +224,37 @@ Figure 20: Compare the instance segmentation and object detection results based 
 
 # References
 Ahmed, B., T. A. Gulliver and S. alZahir (2020). "Image splicing detection using mask-RCNN." Signal Image and Video Processing 14(5): 1035-1042.
-Al-qaness, M. A. A., A. A. Abbasi, H. Fan, R. A. Ibrahim, S. H. Alsamhi and A. Hawbani (2021). "An improved YOLO-based road traffic monitoring system." Computing 103(2): 211-230.
+Al-qaness, M. A. A., A. A. Abbasi, H. Fan, R. A. Ibrahim, S. H. Alsamhi and A. Hawbani (2021). "An improved YOLO-based road traffic monitoring system." Computing 103(2): 211-230.<br/>
 Arifin, A. Z. and A. Asano (2006). "Image segmentation by histogram thresholding using hierarchical cluster analysis." Pattern Recognition Letters 27(13): 1515-1521.
-Badrinarayanan, V., A. Kendall and R. Cipolla (2017). "SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation." Ieee Transactions on Pattern Analysis and Machine Intelligence 39(12): 2481-2495.
-Bagloee, S. A., M. Tavana, M. Asadi and T. Oliver (2016). "Autonomous vehicles: challenges, opportunities, and future implications for transportation policies." Journal of Modern Transportation 24(4): 284-303.
-Bai, M., W. J. Luo, K. Kundu and R. Urtasun (2016). "Exploiting Semantic Information and Deep Matching for Optical Flow." Computer Vision - Eccv 2016, Pt Vi 9910: 154-170.
+Badrinarayanan, V., A. Kendall and R. Cipolla (2017). "SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation." Ieee Transactions on Pattern Analysis and Machine Intelligence 39(12): 2481-2495.<br/>
+Bagloee, S. A., M. Tavana, M. Asadi and T. Oliver (2016). "Autonomous vehicles: challenges, opportunities, and future implications for transportation policies." Journal of Modern Transportation 24(4): 284-303.<br/>
+Bai, M., W. J. Luo, K. Kundu and R. Urtasun (2016). "Exploiting Semantic Information and Deep Matching for Optical Flow." Computer Vision - Eccv 2016, Pt Vi 9910: 154-170.<br/>
 Bolya, D., C. Zhou, F. Y. Xiao and Y. J. Lee (2019). "YOLACT Real-time Instance Segmentation." 2019 Ieee/Cvf International Conference on Computer Vision (Iccv 2019): 9156-9165.
-Cao, Z. G., T. B. Liao, W. Song, Z. H. Chen and C. S. Li (2021). "Detecting the shuttlecock for a badminton robot: A YOLO based approach." Expert Systems with Applications 164.
-Cervantes-Sanchez, F., I. Cruz-Aceves, A. Hernandez-Aguirre, M. A. Hernandez-Gonzalez and S. E. Solorio-Meza (2019). "Automatic Segmentation of Coronary Arteries in X-ray Angiograms using Multiscale Analysis and Artificial Neural Networks." Applied Sciences-Basel 9(24).
-Dudkin, K. N., S. V. Mironov and A. K. Dudkin (1995). "Adaptive Image Segmentation Via Computer Simulation of Vision Processes." Human Vision, Visual Processing, and Digital Display Vi 2411: 310-320.
-Fang, J. X., H. X. Liu, L. T. Zhang, J. Liu and H. S. Liu (2021). "Region-edge-based active contours driven by hybrid and local fuzzy region-based energy for image segmentation." Information Sciences 546: 397-419.
-Geng, K. K., G. Dong, G. D. Yin and J. Y. Hu (2020). "Deep Dual-Modal Traffic Objects Instance Segmentation Method Using Camera and LIDAR Data for Autonomous Driving." Remote Sensing 12(20).
-He, K. M., G. Gkioxari, P. Dollar and R. Girshick (2017). "Mask R-CNN." 2017 Ieee International Conference on Computer Vision (Iccv): 2980-2988.
-Jung, H., M. K. Choi, J. Jung, J. H. Lee, S. Kwon and W. Y. Jung (2017). "ResNet-based Vehicle Classification and Localization in Traffic Surveillance Systems." 2017 Ieee Conference on Computer Vision and Pattern Recognition Workshops (Cvprw): 934-940.
-Le, T. H. N., Y. T. Zheng, C. C. Zhu, K. Luu and M. Savvides (2016). "Multiple Scale Faster-RCNN Approach to Driver's Cell-phone Usage and Hands on Steering Wheel Detection." Proceedings of 29th Ieee Conference on Computer Vision and Pattern Recognition Workshops, (Cvprw 2016): 46-53.
-Martinez, R. P., I. Schiopu, B. Cornelis and A. Munteanu (2021). "Real-Time Instance Segmentation of Traffic Videos for Embedded Devices." Sensors 21(1).
-Nobis, F., M. Geisslinger, M. Weber, J. Betz and M. Lienkamp (2019). "A Deep Learning-based Radar and Camera Sensor Fusion Architecture for Object Detection." 2019 Symposium on Sensor Data Fusion: Trends, Solutions, Applications (Sdf 2019).
-Ognard, J., J. Mesrar, Y. Benhoumich, L. Misery, V. Burdin and D. Ben Salem (2019). "Edge detector-based automatic segmentation of the skin layers and application to moisturization in high-resolution 3 Tesla magnetic resonance imaging." Skin Research and Technology 25(3): 339-346.
-Opara, R. and F. Worgotter (1997). "Introducing visual latencies into spin-lattice models for image segmentation: A neuromorphic approach to a computer vision problem." 1997 Ieee International Conference on Neural Networks, Vols 1-4: 2300-2303.
-Ozan, S. and L. O. Iheme (2019). "Artificial Neural Networks in Customer Segmentation." 2019 27th Signal Processing and Communications Applications Conference (Siu).
-Perez-Perez, Y., M. Golparvar-Fard and K. El-Rayes (2019). "Artificial Neural Network for Semantic Segmentation of Built Environments for Automated Scan2BIM." Computing in Civil Engineering 2019: Data, Sensing, and Analytics: 97-104.
-Redmon, J., S. Divvala, R. Girshick and A. Farhadi (2016). "You Only Look Once: Unified, Real-Time Object Detection." 2016 Ieee Conference on Computer Vision and Pattern Recognition (Cvpr): 779-788.
-Redmon, J. and A. Farhadi (2017). "YOLO9000: Better, Faster, Stronger." 30th Ieee Conference on Computer Vision and Pattern Recognition (Cvpr 2017): 6517-6525.
-Sarkate, R. S., N. V. Kalyankar and P. B. Khanale (2013). "Application of computer vision and color image segmentation for yield prediction precision." Proceedings of the 2013 International Conference on Information Systems and Computer Networks (Iscon): 9-13.
-Tobias, O. J. and R. Seara (2002). "Image segmentation by histogram thresholding using fuzzy sets." Ieee Transactions on Image Processing 11(12): 1457-1465.
-Wang, Y., J. Choi, K. T. Zhang, Q. Huang, Y. R. Chen, M. S. Lee and C. C. J. Kuo (2020). "Video object tracking and segmentation with box annotation." Signal Processing-Image Communication 85.
-Yang, R. X. and Y. Y. Yu (2021). "Artificial Convolutional Neural Network in Object Detection and Semantic Segmentation for Medical Imaging Analysis." Frontiers in Oncology 11.
-Yu, B., S. H. Ma, H. Y. Li, C. G. Li and J. B. An (2020). "Real-Time Pedestrian Detection for Far-Infrared Vehicle Images and Adaptive Instance Segmentation." Laser & Optoelectronics Progress 57(2).
-Zhao, J. D., C. J. Li, Z. Xu, L. X. Jiao, Z. M. Zhao and Z. B. Wang (2021). "Detection of passenger flow on and off buses based on video images and YOLO algorithm." Multimedia Tools and Applications.
-Zhao, J. D., B. D. Liang and Q. X. Chen (2018). "The key technology toward the self-driving car." International Journal of Intelligent Unmanned Systems 6(1): 2-20.
-Zhao, X. T., W. Li, Y. F. Zhang, T. A. Gulliver, S. Chang and Z. Y. Feng (2016). "A Faster RCNN-based Pedestrian Detection System." 2016 Ieee 84th Vehicular Technology Conference (Vtc Fall).
-mmdetection: https://github.com/open-mmlab/mmdetection
-
+Cao, Z. G., T. B. Liao, W. Song, Z. H. Chen and C. S. Li (2021). "Detecting the shuttlecock for a badminton robot: A YOLO based approach." Expert Systems with Applications 164.<br/>
+Cervantes-Sanchez, F., I. Cruz-Aceves, A. Hernandez-Aguirre, M. A. Hernandez-Gonzalez and S. E. Solorio-Meza (2019). "Automatic Segmentation of Coronary Arteries in X-ray Angiograms using Multiscale Analysis and Artificial Neural Networks." Applied Sciences-Basel 9(24).<br/>
+Dudkin, K. N., S. V. Mironov and A. K. Dudkin (1995). "Adaptive Image Segmentation Via Computer Simulation of Vision Processes." Human Vision, Visual Processing, and Digital Display Vi 2411: 310-320.<br/>
+Fang, J. X., H. X. Liu, L. T. Zhang, J. Liu and H. S. Liu (2021). "Region-edge-based active contours driven by hybrid and local fuzzy region-based energy for image segmentation." Information Sciences 546: 397-419.<br/>
+Geng, K. K., G. Dong, G. D. Yin and J. Y. Hu (2020). "Deep Dual-Modal Traffic Objects Instance Segmentation Method Using Camera and LIDAR Data for Autonomous Driving." Remote Sensing 12(20).<br/>
+He, K. M., G. Gkioxari, P. Dollar and R. Girshick (2017). "Mask R-CNN." 2017 Ieee International Conference on Computer Vision (Iccv): 2980-2988.<br/>
+Jung, H., M. K. Choi, J. Jung, J. H. Lee, S. Kwon and W. Y. Jung (2017). "ResNet-based Vehicle Classification and Localization in Traffic Surveillance Systems." 2017 Ieee Conference on Computer Vision and Pattern Recognition Workshops (Cvprw): 934-940.<br/>
+Le, T. H. N., Y. T. Zheng, C. C. Zhu, K. Luu and M. Savvides (2016). "Multiple Scale Faster-RCNN Approach to Driver's Cell-phone Usage and Hands on Steering Wheel Detection." Proceedings of 29th Ieee Conference on Computer Vision and Pattern Recognition Workshops, (Cvprw 2016): 46-53.<br/>
+Martinez, R. P., I. Schiopu, B. Cornelis and A. Munteanu (2021). "Real-Time Instance Segmentation of Traffic Videos for Embedded Devices." Sensors 21(1).<br/>
+Nobis, F., M. Geisslinger, M. Weber, J. Betz and M. Lienkamp (2019). "A Deep Learning-based Radar and Camera Sensor Fusion Architecture for Object Detection." 2019 Symposium on Sensor Data Fusion: Trends, Solutions, Applications (Sdf 2019).<br/>
+Ognard, J., J. Mesrar, Y. Benhoumich, L. Misery, V. Burdin and D. Ben Salem (2019). "Edge detector-based automatic segmentation of the skin layers and application to moisturization in high-resolution 3 Tesla magnetic resonance imaging." Skin Research and Technology 25(3): 339-346.<br/>
+Opara, R. and F. Worgotter (1997). "Introducing visual latencies into spin-lattice models for image segmentation: A neuromorphic approach to a computer vision problem." 1997 Ieee International Conference on Neural Networks, Vols 1-4: 2300-2303.<br/>
+Ozan, S. and L. O. Iheme (2019). "Artificial Neural Networks in Customer Segmentation." 2019 27th Signal Processing and Communications Applications Conference (Siu).<br/>
+Perez-Perez, Y., M. Golparvar-Fard and K. El-Rayes (2019). "Artificial Neural Network for Semantic Segmentation of Built Environments for Automated Scan2BIM." Computing in Civil Engineering 2019: Data, Sensing, and Analytics: 97-104.<br/>
+Redmon, J., S. Divvala, R. Girshick and A. Farhadi (2016). "You Only Look Once: Unified, Real-Time Object Detection." 2016 Ieee Conference on Computer Vision and Pattern Recognition (Cvpr): 779-788.<br/>
+Redmon, J. and A. Farhadi (2017). "YOLO9000: Better, Faster, Stronger." 30th Ieee Conference on Computer Vision and Pattern Recognition (Cvpr 2017): 6517-6525.<br/>
+Sarkate, R. S., N. V. Kalyankar and P. B. Khanale (2013). "Application of computer vision and color image segmentation for yield prediction precision." Proceedings of the 2013 International Conference on Information Systems and Computer Networks (Iscon): 9-13.<br/>
+Tobias, O. J. and R. Seara (2002). "Image segmentation by histogram thresholding using fuzzy sets." Ieee Transactions on Image Processing 11(12): 1457-1465.<br/>
+Wang, Y., J. Choi, K. T. Zhang, Q. Huang, Y. R. Chen, M. S. Lee and C. C. J. Kuo (2020). "Video object tracking and segmentation with box annotation." Signal Processing-Image Communication 85.<br/>
+Yang, R. X. and Y. Y. Yu (2021). "Artificial Convolutional Neural Network in Object Detection and Semantic Segmentation for Medical Imaging Analysis." Frontiers in Oncology 11.<br/>
+Yu, B., S. H. Ma, H. Y. Li, C. G. Li and J. B. An (2020). "Real-Time Pedestrian Detection for Far-Infrared Vehicle Images and Adaptive Instance Segmentation." Laser & Optoelectronics Progress 57(2).<br/>
+Zhao, J. D., C. J. Li, Z. Xu, L. X. Jiao, Z. M. Zhao and Z. B. Wang (2021). "Detection of passenger flow on and off buses based on video images and YOLO algorithm." Multimedia Tools and Applications.<br/>
+Zhao, J. D., B. D. Liang and Q. X. Chen (2018). "The key technology toward the self-driving car." International Journal of Intelligent Unmanned Systems 6(1): 2-20.<br/>
+Zhao, X. T., W. Li, Y. F. Zhang, T. A. Gulliver, S. Chang and Z. Y. Feng (2016). "A Faster RCNN-based Pedestrian Detection System." 2016 Ieee 84th Vehicular Technology Conference (Vtc Fall).<br/>
+mmdetection: https://github.com/open-mmlab/mmdetection.<br/>
+<br/>
 
 
