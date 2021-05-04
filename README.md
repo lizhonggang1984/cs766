@@ -94,9 +94,8 @@ As shown in Figure 9, Mask R-CNN is a fully convolutional network added to the t
 <img src="/display/figure9.png" alt="figure9" width = "800" />
 </p>
 
-**Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy.**
+**Figure 9 The Mask R-CNN framework for instance segmentation.**
 
-**Figure9: The Mask R-CNN framework for instance segmentation.**
 
 In our study, we forked a Mask-RCNN code from a public Github repo  and made changes to specify CAR as our segmentation class. The annotation files of Seg-Track images are converted to specified format for training and validation. 
 
