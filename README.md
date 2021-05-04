@@ -91,7 +91,6 @@ In our study, we referred to a model built in the mmdetction codebase, which is 
 <img src="/display/figure8.jpg" alt="figure8"/>
 **Figure 8: The Faster R-CNN framework for instance segmentation.**
 
-
 ### 2.4.2 Mask-RCNN
 As shown in Figure 9, Mask R-CNN is a fully convolutional network added to the top of the CNN features of a faster R-CNN to generate a mask segmentation output. Compared to Fast-RCNN, Mask R-CNN has an additional branch for predicting segmentation masks on each ROI in a pixel to pixel manner. ROI Align is used to align the ROI pool more precisely. After the generation of masks, ROI align combines them with classification and bounding boxes from faster R-CNN to generate the precise segmentation (Ahmed, Gulliver et al. 2020). The current version of Mask-RCNN is using Tensorflow and Keras for its library and best use GPU for its computation due to the large parameter numbers, 
 <img src="/display/figure9.png" alt="figure9"/>
@@ -107,7 +106,7 @@ Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweigh
 **Figure 10: The main structure of YOLOv1.**
 
 <img src="/display/figure11.jpg" alt="figure11"/>
-**Figure 11: The main structure of YOLOv5.** 
+**Figure 10: The main structure of YOLOv5.**
 
 <img src="/display/figure12.jpg" alt="figure12"/>
 **Figure 12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications. This figure is adapted from https://www.techleer.com/articles.**
