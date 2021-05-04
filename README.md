@@ -11,6 +11,7 @@
 ## 1.1 Autonomous Driving 
 Self-driving car, also known as an autonomous vehicle, is a vehicle that senses its surrounding environment and is able to move safely with minor human input and manipulation (Bagloee, Tavana et al. 2016). Autonomous driving is one of the key feature of future cars (Figure 1). Over the past decades, with the advance of new technologies in communication and robotics, there is an improvement of autonomous driving technique and an explode of its commercial application. The key technique to aid autonomous driving is the modern driving assistance systems, such as Radar, Lidar, GPS and of course, computer vision techniques (Zhao, Liang et al. 2018).
 
+<img src="/display/figure1.jpg" alt="figure1"/>
 
 Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy.
 
@@ -29,39 +30,6 @@ There are various segmentation methods proposed in recent years to solve image s
 
 As shown in figure 3, a general CNN model consist of some convolutional and pooling layers followed by fully connected layer.  This leads to slow computation and limits its practical usage. In table 1, we listed some of the improved segmentation models in computer vision, including Mask-RCNN (He, Gkioxari et al. 2017), YOLO (Redmon, Divvala et al. 2016), SOLO (Wang, Choi et al. 2020), RCNN (Zhao, Li et al. 2016) (Le, Zheng et al. 2016) and ResNet (Jung, Choi et al. 2017). Their performance varies due to wide range of layer numbers and architecture, which can be applied in different scenario to satisfy custom’s demand. 
 
-Table 1 Comparison of several of current segmentation models.
-Model
-DL Library
-Year
-Parameters
-COCO (mAP)
-Mask-RCNN
-Tensorflow
-2017
-93 M
-39.8
-YOLOV5
-Pytorch
-2020
-7.5 M
-46.7
-SOLO
-Pytorch
-2020
-N.A.
-37.8
-RCNN
-Tensorflow
-2014
-N.A.
-58.5
-ResNet-50
-Tensorflow
-2015
-25.5 M
-N.A.
-
-N.A.: data not available.
 
 In this study, we will focus two performance evaluation markers: running-time and mAP. Running-time is marker to evaluate the computation efficiency and computation costs to obtain trained model and finish detection tasks. AP (Average Precision) and mAP (Mean Average Precision) are the most popular metrics used to evaluate the model accuracy. As shown in table 1, the parameters of different segmentation models vary from 7 million to 25 million and apply different library, which contributes to the great difference of running performance. The mAP for COCO dataset also varies from 37.8 to 58.5, and the accuracy of detection may be major factor needs to be considered in our study.
 
