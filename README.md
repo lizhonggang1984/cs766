@@ -14,7 +14,7 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 
 <img src="/display/figure1.jpg" alt="figure1"/>
 
-**Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy**
+**Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy.**
 
 
 ## 1.2 Image Segmentation in Computer Vision
@@ -43,8 +43,7 @@ Due to its advantages in object tracking, there are many efforts of applying ima
 Another challenging problem in autonomous driving segmentation is the multi object detection.  In order to achieve robust and accurate scene understanding, autonomous vehicles are usually equipped with different sensors (e.g. cameras, LiDARs, Radars), and multiple sensing modalities can be fused to exploit their complementary properties. Many methods have been proposed for deep multi-modal perception problems and is another rising topic in autonomous driving field (Geng, Dong et al. 2020) (Nobis, Geisslinger et al. 2019) (Figure 4). Open datasets and background information pre-loading might be a good way for object detection and semantic segmentation in autonomous driving. 
 
 <img src="/display/figure4.png" alt="figure4"/>
-**Figure 4 Example of image segmentation technology in car driving. (a) Semantic segmentation. (b) Instance segmentation in real-time detection. Figure is adapted and modified based on https://medium.com/hackernoon.**
-
+**Figure 4 Example of image segmentation technology applied in car autonomous driving.(a)Semantic segmentation(b)Instance segmentation in real-time detection.**
 
 # 2. Methods
 ## 2.1 Dataset
