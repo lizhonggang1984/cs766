@@ -1,6 +1,5 @@
 # Segmentation And Car Detection in Autonomous Driving
-#### Zichen Qiu (zqiu3@wisc.edu), Jiun-Ting Chen (jchen857@wisc.edu), 
-#### Zhonggang Li (zli769@wisc.edu), Yimiao Cao (cao223@wisc.edu)
+#### Zichen Qiu (zqiu3@wisc.edu), Jiun-Ting Chen (jchen857@wisc.edu), Zhonggang Li (zli769@wisc.edu), Yimiao Cao (cao223@wisc.edu)
 
 
 ### Presentation: http://www.zichenqiu.com/uploads/1/3/6/7/13670916/cs_766_final_project__1_.pptx.pdf
@@ -13,7 +12,7 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 
 <img src="/display/figure1.jpg" alt="figure1"/>
 
-** Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy. **
+_Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy. _
 
 
 ## 1.2 Image Segmentation in Computer Vision
