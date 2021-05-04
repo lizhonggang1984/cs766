@@ -42,7 +42,8 @@ Due to its advantages in object tracking, there are many efforts of applying ima
 Another challenging problem in autonomous driving segmentation is the multi object detection.  In order to achieve robust and accurate scene understanding, autonomous vehicles are usually equipped with different sensors (e.g. cameras, LiDARs, Radars), and multiple sensing modalities can be fused to exploit their complementary properties. Many methods have been proposed for deep multi-modal perception problems and is another rising topic in autonomous driving field (Geng, Dong et al. 2020) (Nobis, Geisslinger et al. 2019) (Figure 4). Open datasets and background information pre-loading might be a good way for object detection and semantic segmentation in autonomous driving. 
 
 <img src="/display/figure4.png" alt="figure4"/>
-**Figure 4 Segmentation technology used in autonomous driving.**
+
+**Figure 4 Segmentation Technology used in autonomous driving**.
 
 # 2. Methods
 ## 2.1 Dataset
