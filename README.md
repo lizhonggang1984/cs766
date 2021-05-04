@@ -11,7 +11,7 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 <p align="center">
 <img src="display/figure1.jpg" alt="figure1"/>
 </p>
-**Figure1 Autonomous driving as the key feature of future cars. No or minor human manipulation and realtime surroundings detection are major components of future cars.**
+<br/>
 **Figure2 Two types of segmentation in computer vision.a:Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. b:Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class.**
 
 <br/>
