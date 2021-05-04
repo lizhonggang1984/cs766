@@ -12,7 +12,7 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 <p align="center">
 <img src="/display/figure1.jpg" alt="figure1" align="center"/>
 </p>
-Figure1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars.
+**Figure1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars.**
 
 ## 1.2 Image Segmentation in Computer Vision
 Image segmentation is an important subject of computer vision. It is the process of dividing an image into different regions based on the characteristics of pixels to identify objects in a more efficient way (Opara and Worgotter 1997) (Sarkate, Kalyankar et al. 2013). There are two major types of image segmentation — semantic segmentation and instance segmentation. In semantic segmentation, all objects of the same type are marked using one class label while in instance segmentation similar objects get their own separate labels (Dudkin, Mironov et al. 1995). In Figure 2, we showed the major difference of semantic segmentation and instance segmentation. And in this study, we will mainly focused on vehicle instance segmentation, which is applicable in practice in autonomous driving context.
