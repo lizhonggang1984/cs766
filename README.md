@@ -19,11 +19,11 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 Image segmentation is an important subject of computer vision. It is the process of dividing an image into different regions based on the characteristics of pixels to identify objects in a more efficient way (Opara and Worgotter 1997) (Sarkate, Kalyankar et al. 2013). There are two major types of image segmentation — semantic segmentation and instance segmentation. In semantic segmentation, all objects of the same type are marked using one class label while in instance segmentation similar objects get their own separate labels (Dudkin, Mironov et al. 1995). In Figure 2, we showed the major difference of semantic segmentation and instance segmentation. And in this study, we will mainly focused on vehicle instance segmentation, which is applicable in practice in autonomous driving context.
 
 <img src="/display/figure2.png" alt="figure2"/>
-** Figure 2 Two types of segmentation in computer vision. (a) Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. (b) Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class. Figure 2 is adapted and modified based on https://analyticsindiamag.com.**
+**Figure 2 Two types of segmentation in computer vision. (a) Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. (b) Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class. Figure 2 is adapted and modified based on https://analyticsindiamag.com.**
 
 The basic architecture in image segmentation consists of an encoder and a decoder. The encoder extracts features from the image through filters. and decoder is responsible for generating the final output which is usually a segmentation mask containing the outline of the object (Figure 3). 
-
-Figure 3 Basic architecture of image segmentation. An architecture consists of encoder layer and decoder layer (Badrinarayanan, Kendall et al. 2017).
+<img src="/display/figure2.png" alt="figure2"/>
+**Figure 3 Basic architecture of image segmentation. An architecture consists of encoder layer and decoder layer(Badrinarayanan, Kendall et al. 2017)**.
 
 There are various segmentation methods proposed in recent years to solve image segmentation problems in computer vision. These algorithms include threshold method (Tobias and Seara 2002), edge-based method (Ognard, Mesrar et al. 2019), region-based method (Fang, Liu et al. 2021) clustering based method (Arifin and Asano 2006) and artificial neural network-based method (Yang and Yu 2021) (Cervantes-Sanchez, Cruz-Aceves et al. 2019) (Perez-Perez, Golparvar-Fard et al. 2019) (Ozan and Iheme 2019). 
 
