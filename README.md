@@ -36,6 +36,9 @@ In this study, we will focus two performance evaluation markers: running-time an
 **Table1 Comparison of different object detection models.**.
 
 ## 1.3 Application of Image Segmentation in Autonomous Driving
+
+
+
 Due to its advantages in object tracking, there are many efforts of applying image segmentation in autonomous driving system. In the meanwhile, there are several challenges for the application of image segmentation in autonomous driving. One is the moving character of objects on the road, which makes the detection work hard to track and needs to be done within seconds (Bai, Luo et al. 2016). There are many methods that can be used for moving objects or video segmentation task, such as YOLO (Redmon, Divvala et al. 2016) and YOLACT (Bolya, Zhou et al. 2019). The real-time video segmentation requires a faster computation speed and acceptable accuracy. Therefore speeding up is the main concern in video segmentation in real-time. This is a new subject in computer vision and will be boosted with high-performance GPU devices in future (Martinez, Schiopu et al. 2021) (Yu, Ma et al. 2020).
 
 Another challenging problem in autonomous driving segmentation is the multi object detection.  In order to achieve robust and accurate scene understanding, autonomous vehicles are usually equipped with different sensors (e.g. cameras, LiDARs, Radars), and multiple sensing modalities can be fused to exploit their complementary properties. Many methods have been proposed for deep multi-modal perception problems and is another rising topic in autonomous driving field (Geng, Dong et al. 2020) (Nobis, Geisslinger et al. 2019) (Figure 4). Open datasets and background information pre-loading might be a good way for object detection and semantic segmentation in autonomous driving. 
@@ -101,7 +104,7 @@ In our study, we forked a Mask-RCNN code from a public Github repo  and made cha
 ### 2.4.3 YOLO
 Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 9). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
 <p align="center">
-<img src="/display/figure12.jpg" alt="figure12" height="500" width="500"/>
+<img src="/display/figure12.jpg" alt="figure12" height="300" width="400"/>
 </p>
 
 **Figure9: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.**
