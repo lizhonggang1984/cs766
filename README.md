@@ -9,14 +9,14 @@
 ## 1.1 Autonomous Driving 
 Self-driving car, also known as an autonomous vehicle, is a vehicle that senses its surrounding environment and is able to move safely with minor human input and manipulation (Bagloee, Tavana et al. 2016). Autonomous driving is one of the key feature of future cars (Figure 1). Over the past decades, with the advance of new technologies in communication and robotics, there is an improvement of autonomous driving technique and an explode of its commercial application. The key technique to aid autonomous driving is the modern driving assistance systems, such as Radar, Lidar, GPS and of course, computer vision techniques (Zhao, Liang et al. 2018).
 <p align="center">
-<img src="/display/figure1.jpg" alt="figure1" align="center"/>
+<img src="./display/figure1.jpg" alt="figure1" align="center"/>
 </p>
 Figure1 Autonomous driving as the key feature of future cars. No or minor human manipulation and realtime surroundings detection are major components of future cars.
 
 ## 1.2 Image Segmentation in Computer Vision
 Image segmentation is an important subject of computer vision. It is the process of dividing an image into different regions based on the characteristics of pixels to identify objects in a more efficient way (Opara and Worgotter 1997) (Sarkate, Kalyankar et al. 2013). There are two major types of image segmentation — semantic segmentation and instance segmentation. In semantic segmentation, all objects of the same type are marked using one class label while in instance segmentation similar objects get their own separate labels (Dudkin, Mironov et al. 1995). In Figure 2, we showed the major difference of semantic segmentation and instance segmentation. And in this study, we will mainly focused on vehicle instance segmentation, which is applicable in practice in autonomous driving context.
 
-<img src="/display/figure2.png" alt="figure2"/>
+<img src="./display/figure2.png" alt="figure2"/>
 
 **Figure2 Two types of segmentation in computer vision.a:Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. b:Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class.**
 
