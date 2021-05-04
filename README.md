@@ -13,22 +13,21 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 </p>
 <br/>
 Figure1 Autonomous driving as the key feature of future cars. No or minor human manipulation and realtime surroundings detection are major components of future cars.
-**bold""
 
 ## 1.2 Image Segmentation in Computer Vision
 Image segmentation is an important subject of computer vision. It is the process of dividing an image into different regions based on the characteristics of pixels to identify objects in a more efficient way (Opara and Worgotter 1997) (Sarkate, Kalyankar et al. 2013). There are two major types of image segmentation — semantic segmentation and instance segmentation. In semantic segmentation, all objects of the same type are marked using one class label while in instance segmentation similar objects get their own separate labels (Dudkin, Mironov et al. 1995). In Figure 2, we showed the major difference of semantic segmentation and instance segmentation. And in this study, we will mainly focused on vehicle instance segmentation, which is applicable in practice in autonomous driving context.
 
 <img src="display/figure2.png" alt="figure2"/>
 
-**Figure2 Two types of segmentation in computer vision.a:Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. b:Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class.**
+Figure2 Two types of segmentation in computer vision.a:Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. b:Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class.
 
 
 The basic architecture in image segmentation consists of an encoder and a decoder. The encoder extracts features from the image through filters. and decoder is responsible for generating the final output which is usually a segmentation mask containing the outline of the object (Figure 3). 
 
 <img src="display/figure3.png" alt="figure3" width = "1000">
 
-**Figure 3 Basic architecture of image segmentation. An architecture consists of encoder layer and decoder layer(Badrinarayanan, Kendall et al. 2017)**.
-
+Figure 3 Basic architecture of image segmentation. An architecture consists of encoder layer and decoder layer(Badrinarayanan, Kendall et al. 2017).
+<br/>
 There are various segmentation methods proposed in recent years to solve image segmentation problems in computer vision. These algorithms include threshold method (Tobias and Seara 2002), edge-based method (Ognard, Mesrar et al. 2019), region-based method (Fang, Liu et al. 2021) clustering based method (Arifin and Asano 2006) and artificial neural network-based method (Yang and Yu 2021) (Cervantes-Sanchez, Cruz-Aceves et al. 2019) (Perez-Perez, Golparvar-Fard et al. 2019) (Ozan and Iheme 2019). 
 
 As shown in figure 3, a general CNN model consist of some convolutional and pooling layers followed by fully connected layer.  This leads to slow computation and limits its practical usage. As shown in table 1, we listed some of the improved segmentation models in computer vision, including Mask-RCNN (He, Gkioxari et al. 2017), YOLO (Redmon, Divvala et al. 2016), SOLO (Wang, Choi et al. 2020), RCNN (Zhao, Li et al. 2016) (Le, Zheng et al. 2016) and ResNet (Jung, Choi et al. 2017). Their performance varies due to wide range of layer numbers and architecture, which can be applied in different scenario to satisfy custom’s demand. 
@@ -46,14 +45,14 @@ Another challenging problem in autonomous driving segmentation is the multi obje
 
 <img src="display/figure4.png" alt="figure4"/>
 
-**Figure 4 Segmentation Technology used in autonomous driving**.
+Figure 4 Segmentation Technology used in autonomous driving.
 
 # 2. Methods
 ## 2.1 Dataset
 There are multiple datasets available for autonomous driving algorithm development, such as Landmarks (Google open-sourced dataset), Level 5, (Lyft open-sourced the Level 5 dataset) and Oxford Radar Robot-Car Dataset (Oxford radar detection dataset). The Berkeley deep-driving dataset (BDD100K) is a dataset in vehicle detection algorithm development. This dataset collected by UC Berkeley consists of over 100K video sequences with diverse kinds of annotations including image-level tagging, object bounding boxes, drivable areas, lane markings, and full-frame instance segmentation. The dataset possesses geographic, environmental, and weather diversity. Thus we choose BDD100K (https://bdd-data.berkeley.edu/portal.html) (Figure 5). 
 <img src="display/figure5.jpg" alt="figure5"/>
 
-**Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road**.
+Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road.
 
 ## 2.2 Data Type and Pre-processing
 Our dataset and model includes two kinds of annotation and prediction: mask and bounding box. For the mask prediction task, we choose Multi-object tracking (MOTS) 2020 images and labels from BDD as our training, validation and testing data source. Since the images are tracking images, we select the first picture from each scene. In total we obtained 157 images as training dataset, 39 images as validation dataset and 10 images as testing dataset (Table 2). Regarding the bounding box task, we use another 10,000 dataset in BDD and split the dataset into 8000 training data, 1000 validation data, and 1000 testing data, where the ratio of day/night in the testing data is close to 1. 
@@ -62,12 +61,11 @@ Our dataset and model includes two kinds of annotation and prediction: mask and 
 Table2 Images extracted and used in our study.
 
 <br/> 
-<br/> 
 For mask tasks, we also split data into day-time images and night-time images  (shown in Figure 6). For compatibility with YOLO formatting, we used Roboflow to convert our annotation to box regions. 
 
 <img src="display/figure6.png" alt="figure6"/>
 
-**Figure 6: Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**
+Figure 6: Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time.
 
 ## 2.3 Hardware and Workflow
 In our study, we submitted our jobs to Euler cluster (WACC Computational Infrastructure) and CHTC's high-throughput computing servers and ran with a single GPU. We further set and fixed our configurations by anaconda (conda create) and docker image   
@@ -97,7 +95,7 @@ As shown in Figure 8, Mask R-CNN is a fully convolutional network added to the t
 <img src="display/figure9.png" alt="figure9" width = "800" />
 </p>
 
-**Figure 8 The Mask R-CNN framework for instance segmentation.**
+Figure 8 The Mask R-CNN framework for instance segmentation.
 
 
 In our study, we forked a Mask-RCNN code from a public Github repo  and made changes to specify CAR as our segmentation class. The annotation files of Seg-Track images are converted to specified format for training and validation. 
@@ -108,7 +106,7 @@ Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweigh
 <img src="display/figure12.jpg" alt="figure12" height="300" width="400"/>
 </p>
 
-**Figure9: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.**
+Figure9: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.
 
 We trained our data with v4 and v5 in this study. For v4, we also referred to the model and the pre-trained weighting  that was provided in the mmdection codebase. For v5, we followed the following public Github repo. 
 
@@ -124,7 +122,7 @@ The mean Average Precision is calculated by taking the mAP over all classes and/
 <p align="center">
 <img src="display/figure13.png" alt="figure13" height="300" width="400"/>
 </p>
-Figure 10: Definition of Intersection over Union to calculate mAP.
+Figure10: Definition of Intersection over Union to calculate mAP.
 
 # 3. Results 
 ## 3.1 Mask-RCNN (for Car Image Segmentation)
@@ -132,7 +130,7 @@ Figure 10: Definition of Intersection over Union to calculate mAP.
 We started our training using pre-weight based on MS COCO training. COCO is a large-scale object detection, segmentation and captioning dataset with over 330K images. It uses 80 classes and generates 80 categories ready for detection. So we first used the pre-weight for detection of our images (Figure 11), and found some missing labels of cars in our car datasets. The mAP based on the validation dataset for COCO pre-weight for car segmentation is only 0.4024. Thus we need to train our own car datasets to achieve better performance for our Mask-RCNN model.
 
 <img src="display/figure14.png" alt="figure14"/>
-Figure 11 Applying COCO pre-weight for car segmentation task in Mask-RCNN. The mAP calculated based on validation dataset for pre weight is only 0.4024, which can’t predict the car on the road. We can observe the red car in the right of the image and the truck in the back can’t be segmented as car labeling properly.
+Figure11 Applying COCO pre-weight for car segmentation task in Mask-RCNN. The mAP calculated based on validation dataset for pre weight is only 0.4024, which can’t predict the car on the road. We can observe the red car in the right of the image and the truck in the back can’t be segmented as car labeling properly.
 
 
 ### 3.1.2 Training with new processed data: better performance
@@ -140,19 +138,19 @@ Next, we added 200 images from the BDD database to train a new model based on th
 
 <img src="display/figure15.png" alt="figure15"/>
 
-Figure 12 Mask-RCNN model performs better than pre-trained model. The mAP for COCO pre-trained model and trained Mask-RCNN model are 0.40 and 0.46, respectively. From above images, we can see (a) COCO model fails to detect the red cars in the right of image but (b) our trained model is able to detect it.
+Figure12 Mask-RCNN model performs better than pre-trained model. The mAP for COCO pre-trained model and trained Mask-RCNN model are 0.40 and 0.46, respectively. From above images, we can see (a) COCO model fails to detect the red cars in the right of image but (b) our trained model is able to detect it.
 
 However, the increase of steps and epoch number will significantly increase the running time of the training process. In our initial running, we attempted to finish our task in a CPU condor, but that can’t be done within 72 hours limit. We found the running time of Mask-RCNN can be significantly reduced by using a GPU device. Table 4 showed the running time for CPU and GPU
  <p align="center">
 <img src="display/table4.png" alt="table4"/>
  </p>
-Table 4 CPU and GPU running time for Mask-RCNN.
+**Table 4 CPU and GPU running time for Mask-RCNN.**
 
 So we tested different hyperparameters and tried to get the best-fit model as our Mask-RCNN model. In figure 13, we observed that with 100 steps and 30 epoch, we were able to obtain the best accuracy for validation data. And 100 steps and 50 epochs may be overfitting and lead to reduced mAP for validating dataset.
 <p align="center">
 <img src="display/figure16.png" alt="figure16"/>
  </p>
-Figure 13 Performance evaluation of different steps and epoch. With more epochs and more steps, the accuracy for training data is increasing, but the optimum setup is 100 x 30epoch. 100 x 50 epoch caused a drop of mAP in validation data, indicating the existence of overfitting.
+Figure13 Performance evaluation of different steps and epoch. With more epochs and more steps, the accuracy for training data is increasing, but the optimum setup is 100 x 30epoch. 100 x 50 epoch caused a drop of mAP in validation data, indicating the existence of overfitting.
 
 
 ### 3.1.3 Highly Dependent Different Scenario: Day/Night
@@ -160,9 +158,9 @@ In the next step, we split our validation dataset into two groups, day-time grou
 <p align="center">
 <img src="display/figure17.png" alt="figure17" align="center"/>
 </p>
-Figure 14 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
+Figure14 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
 <img src="display/figure182.png" alt="figure182"/>
-Figure 15 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
+Figure15 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
 
 ### 3.1.4 Improved mAP When Training by Separate Datasets
 
@@ -170,9 +168,9 @@ Then we split the training data into day-time and night-time groups and train ou
 <p align="center">
 <img src="display/figure19.png" alt="figure19" align="center"/>
  </p>
-Figure 16 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
+Figure16 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
 <img src="display/figure20.png" alt="figure20" width="1000"/>
-Figure 17 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
+Figure17 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
 
 ## 3.2 Object detection with Bounding Box Annotation
 ### 3.2.1 Faster RCNN
@@ -184,7 +182,9 @@ The following are the prediction results of 1000 testing data based on the train
 The following shows the result of YOLOv4 ran with the same dataset. In this part. We split testing data into daytime and nighttime. The  models were trained by 6 epoches, where each one includes 1000 steps. The model didn’t perform better when set a bit more epoches. And therefore we stopped the training in a relatively short epoch. The training took about 1 hour during busy hours, which is much faster than faster R-CNN. Based on our result, we first find out that this light-weighted has worse performance, where recall and ap are lower in general. Besides, we did not see a significant difference when it comes to the performance of cars and traffic lights. However, the traffic signs, rider, motor, and person ones have different performance, which means that their features may be different between two scenarios.
 #
 <img src="display/table5.png" alt="table5" width="1000"/>
-In table 5, we see that the Faster RCNN model prediction performance depends on the object, but it performs well on detecting cars. And Faster RCNN performs better than YOLOV4.
+**Table5 Faster RCNN and YOLOV4 Comparasion.**
+
+In table5, we see that the Faster RCNN model prediction performance depends on the object, but it performs well on detecting cars. And Faster RCNN performs better than YOLOV4.
 
 ### 3.2.3 YOLOv5 Model
 YOLOv5 is the latest version of the series of models. We trained our car model in YOLOV5 starting from the pre-weight given by COCO dataset (the big pre-weight, yolov5x.pt). Due to the time limit, we cannot make it to transform the 10K dataset to the specific format for this model. Hence, we used the 200 samples one instead. In the training process, users could visualize the segmentation and make changes.
@@ -194,7 +194,7 @@ The most important character of YOLOv5 is its high performance. We found the tra
 
 
 <img src="display/figure21.png" alt="figure21"/>
-Figure 18:  Precision, recall, mAP and PR-curve of YOLOV5. The mAP for training data can come to 0.9 with 500 epochs, and the PR-curve area can come to 0.821 in our training model.
+Figure18:  Precision, recall, mAP and PR-curve of YOLOV5. The mAP for training data can come to 0.9 with 500 epochs, and the PR-curve area can come to 0.821 in our training model.
 
 
 ## 3.3 Comparison of Mask-RCNN and YOLOv5 
@@ -204,10 +204,10 @@ The major difference between Mask-RCNN and YOLOV5 is they are focusing on differ
 
 
 <img src="display/figure22.png" alt="figure22"/>
-Figure 19:  Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for day-time images. (a, b) Mask-RCNN segmented images (c,d) YOLOV5  object detection images.
+Figure19:  Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for day-time images. (a, b) Mask-RCNN segmented images (c,d) YOLOV5  object detection images.
 
 <img src="display/figure23.png" alt="figure23"/>
-Figure 20: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
+Figure20: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
 
 # 4. Conclusion
 ### 4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset.
