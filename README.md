@@ -160,7 +160,7 @@ Then we split the training data into day-time and night-time groups and train ou
 
 <img src="/display/figure19.png" alt="figure19"/>
 Figure 19 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
-<img src="/display/figure20.png" alt="figure20"/>
+<img src="/display/figure20.png" alt="figure20" width="1000"/>
 Figure 20 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
 
 ## 3.2 Object detection with Bounding Box Annotation
