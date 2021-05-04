@@ -62,6 +62,9 @@ Our dataset and model includes two kinds of annotation and prediction: mask and 
 For mask tasks, we also split data into day-time images and night-time images  (shown in Figure 6). For compatibility with YOLO formatting, we used Roboflow to convert our annotation to box regions. 
 
 <img src="/display/figure6.png" alt="figure6"/>
+
+**Figure2 Two types of segmentation in computer vision.a:Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. b:Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class.**
+
 **Figure 6 Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**.
 
 2.3 Hardware and Workflow
