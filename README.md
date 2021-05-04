@@ -12,7 +12,7 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 
 <img src="/display/figure1.jpg" alt="figure1"/>
 
-_Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy. _
+**Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy**
 
 
 ## 1.2 Image Segmentation in Computer Vision
