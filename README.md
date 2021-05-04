@@ -12,6 +12,7 @@ Self-driving car, also known as an autonomous vehicle, is a vehicle that senses 
 <p align="center">
 <img src="/display/figure1.jpg" alt="figure1" align="center"/>
 </p>
+<br/>
 __Figure1: Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars__
 
 ## 1.2 Image Segmentation in Computer Vision
