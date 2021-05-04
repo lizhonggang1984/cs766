@@ -4,7 +4,7 @@
 
 ### Presentation: http://www.zichenqiu.com/uploads/1/3/6/7/13670916/cs_766_final_project__1_.pptx.pdf
 ### Github Repo: https://github.com/lizhonggang1984/cs766
-### Dockerhub Repo: lizhonggang1984/mask:v2, lizhonggang1984/yolov5:v1
+### Dockerhub Repo: https://hub.docker.com/repository/docker/lizhonggang1984/mask:v2, https://hub.docker.com/repository/docker/lizhonggang1984/yolov5:v1
 
 #
 
