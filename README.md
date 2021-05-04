@@ -112,7 +112,7 @@ We made changes to the data.yaml file and the configuration file in model to bet
 We split images by day/night time and trained them with different models. We then evaluated the model by mean Average Precision (mAP) and compared the result in different scenarios. In statistics, precision measures how accurate your predictions are, that is, the percentage of your predictions are correct. The definition of precision are shown as follows:
 ##
 <img src="/display/formula.png" alt="formula"/>
-#
+<br/>
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 13 illustrates the idea.  
 
 <img src="/display/figure13.png" alt="figure13"/>
@@ -151,7 +151,7 @@ In the next step, we split our validation dataset into two groups, day-time grou
 
 <img src="/display/figure17.png" alt="figure17"/>
 Figure 17 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
-<img src="/display/figure18.png" alt="figure18"/>
+<img src="/display/figure182.png" alt="figure182"/>
 Figure 18 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
 
 ### 3.1.4 Improved mAP When Training by Separate Datasets
