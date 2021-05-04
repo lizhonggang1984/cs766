@@ -62,7 +62,7 @@ Our dataset and model includes two kinds of annotation and prediction: mask and 
 For mask tasks, we also split data into day-time images and night-time images  (shown in Figure 6). For compatibility with YOLO formatting, we used Roboflow to convert our annotation to box regions. 
 
 <img src="/display/figure6.png" alt="figure6"/>
-**Figure 6 Representative images selected from BDD tracking dataset into our study. (a,b) Images with annotation as day time. (c,d) Images with annotation as night time.**
+**Figure 6 Representative images selected from BDD tracking dataset into our study (a,b) Images with annotation as day time (c,d) Images with annotation as night time**.
 
 2.3 Hardware and Workflow
 In our study, we submitted our jobs to Euler cluster (WACC Computational Infrastructure) and CHTC's high-throughput computing servers and ran with a single GPU. We further set and fixed our configurations by anaconda (conda create) and docker image   
