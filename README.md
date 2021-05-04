@@ -3,9 +3,9 @@
 #### Zhonggang Li (zli769@wisc.edu), Yimiao Cao (cao223@wisc.edu)
 
 
-#### Webpage: http://www.zichenqiu.com/766-computer-vision-project.html
-#### Github Repo: https://github.com/lizhonggang1984/cs766
-#### Dockerhub Repo: lizhonggang1984/mask:v2, lizhonggang1984/yolov5:v1
+### Webpage: http://www.zichenqiu.com/766-computer-vision-project.html
+### Github Repo: https://github.com/lizhonggang1984/cs766
+### Dockerhub Repo: lizhonggang1984/mask:v2, lizhonggang1984/yolov5:v1
 
 # 1. Introduction
 ## 1.1 Autonomous Driving 
