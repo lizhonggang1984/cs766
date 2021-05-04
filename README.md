@@ -102,7 +102,8 @@ Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweigh
 <p align="center">
 <img src="/display/figure12.jpg" alt="figure12" width="600"/>
 </p>
-**Figure 12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications. This figure is adapted from https://www.techleer.com/articles.**
+
+**Figure12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.**
 
 We trained our data with v4 and v5 in this study. For v4, we also referred to the model and the pre-trained weighting  that was provided in the mmdection codebase. For v5, we followed the following public Github repo. 
 
@@ -111,7 +112,7 @@ We made changes to the data.yaml file and the configuration file in model to bet
 
 # 2.5 Evaluation Metric
 We split images by day/night time and trained them with different models. We then evaluated the model by mean Average Precision (mAP) and compared the result in different scenarios. In statistics, precision measures how accurate your predictions are, that is, the percentage of your predictions are correct. The definition of precision are shown as follows:
-##
+<br/>
 <img src="/display/formula.png" alt="formula"/>
 <br/>
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 13 illustrates the idea.  
@@ -203,19 +204,18 @@ Figure 22:  Compare the instance segmentation and object detection results based
 <img src="/display/figure23.png" alt="figure23"/>
 Figure 23: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
 
-# Conclusion
+# 4. Conclusion
 
 ### For image segmentation tasks, we got a good result by 200 well-annotated car dataset. Besides, we see that the results of daytime/night data differ. We could also look into the performance of other objects in the future.
 ### For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.
 
-# Future works: 
+# 5. Future works: 
 ### Use larger dataset to see if the performance of mask-rcnn could be even better. 
 ### Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models 
 ### It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
 ### Do more model tuning or modify the model structure to gain performance.
 
-
-
+<br/>
 
 
 
