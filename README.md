@@ -170,8 +170,9 @@ Then we split the training data into day-time and night-time groups and train ou
  </p>
 Figure16 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
 <img src="display/figure20.png" alt="figure20" width="1000"/>
+<br/>
 Figure17 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
-
+<br/>
 ## 3.2 Object detection with Bounding Box Annotation
 ### 3.2.1 Faster RCNN
 In this experiment we trained Faster RCNN with 8000 training data with bounding box annotation from the 10,000 BDD dataset. We included 6 main objects in the dataset and evaluated the performance of detection by recall and AP. 
@@ -207,8 +208,9 @@ The major difference between Mask-RCNN and YOLOV5 is they are focusing on differ
 Figure19:  Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for day-time images. (a, b) Mask-RCNN segmented images (c,d) YOLOV5  object detection images.
 
 <img src="display/figure23.png" alt="figure23"/>
+<br/>
 Figure20: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
-
+<br/>
 # 4. Conclusion
 4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset.<br/>
 4.2 We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.<br/>
