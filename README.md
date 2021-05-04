@@ -63,7 +63,7 @@ For mask tasks, we also split data into day-time images and night-time images  (
 
 <img src="/display/figure6.png" alt="figure6"/>
 
-**Figure6 Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**
+**Figure 6: Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**
 
 2.3 Hardware and Workflow
 In our study, we submitted our jobs to Euler cluster (WACC Computational Infrastructure) and CHTC's high-throughput computing servers and ran with a single GPU. We further set and fixed our configurations by anaconda (conda create) and docker image   
@@ -103,10 +103,10 @@ In our study, we forked a Mask-RCNN code from a public Github repo  and made cha
 Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 11). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
  
 <img src="/display/figure10.png" alt="figure10"/>
-**Figure 10: The main structure of YOLOv1.**
+**Figure 10: The YOLOV1 main structure**
 
 <img src="/display/figure11.jpg" alt="figure11"/>
-**Figure 10: The main structure of YOLOv5.**
+**Figure 11: The YOLOV5 main structure**
 
 <img src="/display/figure12.jpg" alt="figure12"/>
 
@@ -119,6 +119,7 @@ We made changes to the data.yaml file and the configuration file in model to bet
 
 # 2.5 Evaluation Metric
 We split images by day/night time and trained them with different models. We then evaluated the model by mean Average Precision (mAP) and compared the result in different scenarios. In statistics, precision measures how accurate your predictions are, that is, the percentage of your predictions are correct. The definition of precision are shown as follows:
+##
 <img src="/display/formula.png" alt="formula"/>
 #
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 13 illustrates the idea.  
