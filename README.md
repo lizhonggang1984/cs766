@@ -183,8 +183,8 @@ The following shows the result of YOLOv4 ran with the same dataset. In this part
 #
 <img src="display/table5.png" alt="table5" width="1000"/>
 Table5 Faster RCNN and YOLOV4 Comparasion.
-
-In table5, we see that the Faster RCNN model prediction performance depends on the object, but it performs well on detecting cars. And Faster RCNN performs better than YOLOV4.
+<br/>
+In the table5, we see that the Faster RCNN model prediction performance depends on the object, but it performs well on detecting cars. And Faster RCNN performs better than YOLOV4 in detecting most of objects.
 
 ### 3.2.3 YOLOv5 Model
 YOLOv5 is the latest version of the series of models. We trained our car model in YOLOV5 starting from the pre-weight given by COCO dataset (the big pre-weight, yolov5x.pt). Due to the time limit, we cannot make it to transform the 10K dataset to the specific format for this model. Hence, we used the 200 samples one instead. In the training process, users could visualize the segmentation and make changes.
