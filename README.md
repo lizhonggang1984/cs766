@@ -43,14 +43,14 @@ Due to its advantages in object tracking, there are many efforts of applying ima
 Another challenging problem in autonomous driving segmentation is the multi object detection.  In order to achieve robust and accurate scene understanding, autonomous vehicles are usually equipped with different sensors (e.g. cameras, LiDARs, Radars), and multiple sensing modalities can be fused to exploit their complementary properties. Many methods have been proposed for deep multi-modal perception problems and is another rising topic in autonomous driving field (Geng, Dong et al. 2020) (Nobis, Geisslinger et al. 2019) (Figure 4). Open datasets and background information pre-loading might be a good way for object detection and semantic segmentation in autonomous driving. 
 
 <img src="/display/figure4.png" alt="figure4"/>
-**Figure 4 Example of image segmentation technology applied in car autonomous driving.(a)Semantic segmentation(b)Instance segmentation in real-time detection.**
-
+**Figure 4 Segmentation technology used in autonomous driving.**
+#
 # 2. Methods
 ## 2.1 Dataset
 There are multiple datasets available for autonomous driving algorithm development, such as Landmarks (Google open-sourced dataset), Level 5, (Lyft open-sourced the Level 5 dataset) and Oxford Radar Robot-Car Dataset (Oxford radar detection dataset). The Berkeley deep-driving dataset (BDD100K) is a dataset in vehicle detection algorithm development. This dataset collected by UC Berkeley consists of over 100K video sequences with diverse kinds of annotations including image-level tagging, object bounding boxes, drivable areas, lane markings, and full-frame instance segmentation. The dataset possesses geographic, environmental, and weather diversity. Thus we choose BDD100K (https://bdd-data.berkeley.edu/portal.html) (Figure 5). 
 
 <img src="/display/figure5.jpg" alt="figure5"/>
-Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road. 
+**Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road.** 
 
 
 2.2 Data Type and Pre-processing
