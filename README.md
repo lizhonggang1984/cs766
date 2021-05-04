@@ -45,15 +45,15 @@ Another challenging problem in autonomous driving segmentation is the multi obje
 
 <img src="display/figure4.png" alt="figure4"/>
 
-Figure 4 Segmentation Technology used in autonomous driving.
+Figure4 Segmentation Technology used in autonomous driving.
 
 # 2. Methods
 ## 2.1 Dataset
 There are multiple datasets available for autonomous driving algorithm development, such as Landmarks (Google open-sourced dataset), Level 5, (Lyft open-sourced the Level 5 dataset) and Oxford Radar Robot-Car Dataset (Oxford radar detection dataset). The Berkeley deep-driving dataset (BDD100K) is a dataset in vehicle detection algorithm development. This dataset collected by UC Berkeley consists of over 100K video sequences with diverse kinds of annotations including image-level tagging, object bounding boxes, drivable areas, lane markings, and full-frame instance segmentation. The dataset possesses geographic, environmental, and weather diversity. Thus we choose BDD100K (https://bdd-data.berkeley.edu/portal.html) (Figure 5). 
 <img src="display/figure5.jpg" alt="figure5"/>
 
-Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road.
-
+Figure5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road.
+<br/>
 ## 2.2 Data Type and Pre-processing
 Our dataset and model includes two kinds of annotation and prediction: mask and bounding box. For the mask prediction task, we choose Multi-object tracking (MOTS) 2020 images and labels from BDD as our training, validation and testing data source. Since the images are tracking images, we select the first picture from each scene. In total we obtained 157 images as training dataset, 39 images as validation dataset and 10 images as testing dataset (Table 2). Regarding the bounding box task, we use another 10,000 dataset in BDD and split the dataset into 8000 training data, 1000 validation data, and 1000 testing data, where the ratio of day/night in the testing data is close to 1. 
 
@@ -65,7 +65,7 @@ For mask tasks, we also split data into day-time images and night-time images  (
 
 <img src="display/figure6.png" alt="figure6"/>
 
-Figure 6: Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time.
+Figure6: Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time.
 
 ## 2.3 Hardware and Workflow
 In our study, we submitted our jobs to Euler cluster (WACC Computational Infrastructure) and CHTC's high-throughput computing servers and ran with a single GPU. We further set and fixed our configurations by anaconda (conda create) and docker image   
@@ -144,7 +144,7 @@ However, the increase of steps and epoch number will significantly increase the 
  <p align="center">
 <img src="display/table4.png" alt="table4"/>
  </p>
-**Table 4 CPU and GPU running time for Mask-RCNN.**
+Table 4 CPU and GPU running time for Mask-RCNN.
 
 So we tested different hyperparameters and tried to get the best-fit model as our Mask-RCNN model. In figure 13, we observed that with 100 steps and 30 epoch, we were able to obtain the best accuracy for validation data. And 100 steps and 50 epochs may be overfitting and lead to reduced mAP for validating dataset.
 <p align="center">
@@ -182,7 +182,7 @@ The following are the prediction results of 1000 testing data based on the train
 The following shows the result of YOLOv4 ran with the same dataset. In this part. We split testing data into daytime and nighttime. The  models were trained by 6 epoches, where each one includes 1000 steps. The model didn’t perform better when set a bit more epoches. And therefore we stopped the training in a relatively short epoch. The training took about 1 hour during busy hours, which is much faster than faster R-CNN. Based on our result, we first find out that this light-weighted has worse performance, where recall and ap are lower in general. Besides, we did not see a significant difference when it comes to the performance of cars and traffic lights. However, the traffic signs, rider, motor, and person ones have different performance, which means that their features may be different between two scenarios.
 #
 <img src="display/table5.png" alt="table5" width="1000"/>
-**Table5 Faster RCNN and YOLOV4 Comparasion.**
+Table5 Faster RCNN and YOLOV4 Comparasion.
 
 In table5, we see that the Faster RCNN model prediction performance depends on the object, but it performs well on detecting cars. And Faster RCNN performs better than YOLOV4.
 
@@ -256,8 +256,7 @@ Yang, R. X. and Y. Y. Yu (2021). "Artificial Convolutional Neural Network in Obj
 Yu, B., S. H. Ma, H. Y. Li, C. G. Li and J. B. An (2020). "Real-Time Pedestrian Detection for Far-Infrared Vehicle Images and Adaptive Instance Segmentation." Laser & Optoelectronics Progress 57(2).<br/>
 Zhao, J. D., C. J. Li, Z. Xu, L. X. Jiao, Z. M. Zhao and Z. B. Wang (2021). "Detection of passenger flow on and off buses based on video images and YOLO algorithm." Multimedia Tools and Applications.<br/>
 Zhao, J. D., B. D. Liang and Q. X. Chen (2018). "The key technology toward the self-driving car." International Journal of Intelligent Unmanned Systems 6(1): 2-20.<br/>
-Zhao, X. T., W. Li, Y. F. Zhang, T. A. Gulliver, S. Chang and Z. Y. Feng (2016). "A Faster RCNN-based Pedestrian Detection System." 2016 Ieee 84th Vehicular Technology Conference (Vtc Fall).<br/>
-mmdetection: https://github.com/open-mmlab/mmdetection.<br/>
+Zhao, X. T., W. Li, Y. F. Zhang, T. A. Gulliver, S. Chang and Z. Y. Feng (2016). "A Faster RCNN-based Pedestrian Detection System." 2016 Ieee 84th Vehicular Technology Conference (Vtc Fall).mmdetection: https://github.com/open-mmlab/mmdetection.<br/>
 <br/>
 
 
