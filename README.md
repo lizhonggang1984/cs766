@@ -48,12 +48,11 @@ Another challenging problem in autonomous driving segmentation is the multi obje
 # 2. Methods
 ## 2.1 Dataset
 There are multiple datasets available for autonomous driving algorithm development, such as Landmarks (Google open-sourced dataset), Level 5, (Lyft open-sourced the Level 5 dataset) and Oxford Radar Robot-Car Dataset (Oxford radar detection dataset). The Berkeley deep-driving dataset (BDD100K) is a dataset in vehicle detection algorithm development. This dataset collected by UC Berkeley consists of over 100K video sequences with diverse kinds of annotations including image-level tagging, object bounding boxes, drivable areas, lane markings, and full-frame instance segmentation. The dataset possesses geographic, environmental, and weather diversity. Thus we choose BDD100K (https://bdd-data.berkeley.edu/portal.html) (Figure 5). 
-
 <img src="/display/figure5.jpg" alt="figure5"/>
-**Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road.** 
 
+**Figure 5 Berkeley DeepDrive (BDD) Dataset with over 100k images on the road**.
 
-2.2 Data Type and Pre-processing
+## 2.2 Data Type and Pre-processing
 Our dataset and model includes two kinds of annotation and prediction: mask and bounding box. For the mask prediction task, we choose Multi-object tracking (MOTS) 2020 images and labels from BDD as our training, validation and testing data source. Since the images are tracking images, we select the first picture from each scene. In total we obtained 157 images as training dataset, 39 images as validation dataset and 10 images as testing dataset (Table 2). Regarding the bounding box task, we use another 10,000 dataset in BDD and split the dataset into 8000 training data, 1000 validation data, and 1000 testing data, where the ratio of day/night in the testing data is close to 1. 
 <img src="/display/table2.png" alt="table2"/>
 **Table 2 Images summary obtained from BDD tracking dataset.**
