@@ -90,8 +90,9 @@ In our study, we referred to a model built in the mmdetction codebase, which is 
 
 ### 2.4.2 Mask-RCNN
 As shown in Figure 9, Mask R-CNN is a fully convolutional network added to the top of the CNN features of a faster R-CNN to generate a mask segmentation output. Compared to Fast-RCNN, Mask R-CNN has an additional branch for predicting segmentation masks on each ROI in a pixel to pixel manner. ROI Align is used to align the ROI pool more precisely. After the generation of masks, ROI align combines them with classification and bounding boxes from faster R-CNN to generate the precise segmentation (Ahmed, Gulliver et al. 2020). The current version of Mask-RCNN is using Tensorflow and Keras for its library and best use GPU for its computation due to the large parameter numbers, 
-<img src="/display/figure9.png" alt="figure9" width = "800"/>
-
+<p align="center">
+<img src="/display/figure9.png" alt="figure9" width = "800" />
+</p>
 **Figure 9 The Mask R-CNN framework for instance segmentation.**
 
 In our study, we forked a Mask-RCNN code from a public Github repo  and made changes to specify CAR as our segmentation class. The annotation files of Seg-Track images are converted to specified format for training and validation. 
