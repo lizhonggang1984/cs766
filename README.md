@@ -206,16 +206,15 @@ Figure 19:  Compare the instance segmentation and object detection results based
 Figure 20: Compare the instance segmentation and object detection results based on Mask-RCNN and YOLOV5 for night-time images segmentation. (a, b) Mask-RCNN segmented images (c,d) YOLOV5 object detection images.
 
 # 4. Conclusion
-## 4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset.
-## 4.2 We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.
-## 4.3 For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.
+### 4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset.
+### 4.2 We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.
+### 4.3 For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.
 
 # 5. Future works
-## 5.1 Use larger dataset to see if the performance of mask-rcnn could be even better. 
-
-## 5.2 Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
-## 5.3 It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
-## 5.4 Do more model tuning or modify the model structure to gain performance.
+### 5.1 Use larger dataset to see if the performance of mask-rcnn could be even better. 
+### 5.2 Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
+### 5.3 It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
+### 5.4 Do more model tuning or modify the model structure to gain performance.
 
 <br/>
 
