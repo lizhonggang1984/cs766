@@ -213,8 +213,11 @@ For object detection tasks, we use a larger dataset and try two types of models.
 
 # 5. Future works: 
 Use larger dataset to see if the performance of mask-rcnn could be even better. 
-Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models 
+<br\>
+Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
+<br\>
 It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
+<br\>
 Do more model tuning or modify the model structure to gain performance.
 
 <br/>
