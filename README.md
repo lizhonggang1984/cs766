@@ -118,7 +118,7 @@ We split images by day/night time and trained them with different models. We the
 <br/>
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 10 illustrates the idea.  
 <p align="center">
-<img src="/display/figure13.png" alt="figure13" height="500" width="500"/>
+<img src="/display/figure13.png" alt="figure13" height="300" width="400"/>
 </p>
 Figure 10: Definition of Intersection over Union to calculate mAP.
 
@@ -207,19 +207,19 @@ Figure 20: Compare the instance segmentation and object detection results based 
 
 # 4. Conclusion
 
-**For image segmentation tasks, we got a good result by 200 well-annotated car dataset. <br/>
-We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.
+**4.1 For image segmentation tasks, we got a good result by 200 well-annotated car dataset. <br/>
+4.2 We see that the results of daytime/night data differ and our seperate training model overperforms the combined model.
 <br/>
-For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.**
+4.3 For object detection tasks, we use a larger dataset and try two types of models. We found that the faster RCNN has better performance while the YOLO one took much shorter time to train.**
 
 # 5. Future works: 
-**Use larger dataset to see if the performance of mask-rcnn could be even better. 
+**5.1 Use larger dataset to see if the performance of mask-rcnn could be even better. 
 <br/>
-Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
+5.2 Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
 <br/>
-It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
+5.3 It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
 <br/>
-Do more model tuning or modify the model structure to gain performance.**
+5.4 Do more model tuning or modify the model structure to gain performance.**
 
 <br/>
 
