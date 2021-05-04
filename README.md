@@ -63,9 +63,7 @@ For mask tasks, we also split data into day-time images and night-time images  (
 
 <img src="/display/figure6.png" alt="figure6"/>
 
-**Figure2 Two types of segmentation in computer vision.a:Semantic segmentation is focusing on to the full image and label each pixel of an image with a corresponding class. b:Instance segmentation is used in more specific manner, which distinguishes separate objects labeled as the same identified class.**
-
-**Figure 6 Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**.
+**Figure6 Representative images selected from BDD tracking dataset into our study. a,b: Images with annotation as day time c,d: Images with annotation as night time**
 
 2.3 Hardware and Workflow
 In our study, we submitted our jobs to Euler cluster (WACC Computational Infrastructure) and CHTC's high-throughput computing servers and ran with a single GPU. We further set and fixed our configurations by anaconda (conda create) and docker image   
