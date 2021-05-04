@@ -118,7 +118,7 @@ We split images by day/night time and trained them with different models. We the
 <br/>
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 10 illustrates the idea.  
 <p align="center">
-<img src="/display/figure13.png" alt="figure13" width=600/>
+<img src="/display/figure13.png" alt="figure13" height="500" width="500"/>
 </p>
 Figure 10: Definition of Intersection over Union to calculate mAP.
 
@@ -213,11 +213,11 @@ For object detection tasks, we use a larger dataset and try two types of models.
 
 # 5. Future works: 
 Use larger dataset to see if the performance of mask-rcnn could be even better. 
-<br\>
+<br/>
 Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models.
-<br\>
+<br/>
 It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
-<br\>
+<br/>
 Do more model tuning or modify the model structure to gain performance.
 
 <br/>
