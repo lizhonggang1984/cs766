@@ -119,7 +119,7 @@ We split images by day/night time and trained them with different models. We the
 <br/>
 The mean Average Precision is calculated by taking the mAP over all classes and/or over all Intersection over Union (IoU) thresholds. IoU is a common metric when it comes to object localization tasks, which evaluates the performance of the predicted bounding box. Figure 10 illustrates the idea.  
 <p align="center">
-<img src="/display/figure13.png" alt="figure13"/>
+<img src="/display/figure13.png" alt="figure13" width=600/>
 </p>
 Figure 10: Definition of Intersection over Union to calculate mAP.
 
