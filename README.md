@@ -137,20 +137,23 @@ Next, we added 200 images from the BDD database to train a new model based on th
 Figure 15 Mask-RCNN model performs better than pre-trained model. The mAP for COCO pre-trained model and trained Mask-RCNN model are 0.40 and 0.46, respectively. From above images, we can see (a) COCO model fails to detect the red cars in the right of image but (b) our trained model is able to detect it.
 
 However, the increase of steps and epoch number will significantly increase the running time of the training process. In our initial running, we attempted to finish our task in a CPU condor, but that can’t be done within 72 hours limit. We found the running time of Mask-RCNN can be significantly reduced by using a GPU device. Table 4 showed the running time for CPU and GPU
- 
+ <p align="center">
 <img src="/display/table4.png" alt="table4"/>
+ </p>
 Table 4 CPU and GPU running time for Mask-RCNN.
 
 So we tested different hyperparameters and tried to get the best-fit model as our Mask-RCNN model. In figure 16, we observed that with 100 steps and 30 epoch, we were able to obtain the best accuracy for validation data. And 100 steps and 50 epochs may be overfitting and lead to reduced mAP for validating dataset.
-
+<p align="center">
 <img src="/display/figure16.png" alt="figure16"/>
+ </p>
 Figure 16 Performance evaluation of different steps and epoch. With more epochs and more steps, the accuracy for training data is increasing, but the optimum setup is 100 x 30epoch. 100 x 50 epoch caused a drop of mAP in validation data, indicating the existence of overfitting.
 
 
 ### 3.1.3 Highly Dependent Different Scenario: Day/Night
 In the next step, we split our validation dataset into two groups, day-time group and night-time group. Not surprisingly, we found that the difference of mAP between two groups is significant (0.54 vs 0.38), which might be due to lighting and resolution at night time (Figure 17, 18).
-
+<p align="center">
 <img src="/display/figure17.png" alt="figure17" align="center"/>
+</p>
 Figure 17 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
 <img src="/display/figure182.png" alt="figure182"/>
 Figure 18 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
@@ -158,8 +161,9 @@ Figure 18 Demon of segmentation from day-time and night-time images. We can obse
 ### 3.1.4 Improved mAP When Training by Separate Datasets
 
 Then we split the training data into day-time and night-time groups and train our Mask-RCNN model separately. This strategy, although slightly increased the mAP for night-time images, decreased the day-time images segmentation accuracy, which might be due to the relatively small of our dataset and shrink of the total images number in the separate training process (Figure 19, 20).
-
+<p align="center">
 <img src="/display/figure19.png" alt="figure19" align="center"/>
+ </p>
 Figure 19 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
 <img src="/display/figure20.png" alt="figure20" width="1000"/>
 Figure 20 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
