@@ -10,7 +10,7 @@
 ## 1.1 Autonomous Driving 
 Self-driving car, also known as an autonomous vehicle, is a vehicle that senses its surrounding environment and is able to move safely with minor human input and manipulation (Bagloee, Tavana et al. 2016). Autonomous driving is one of the key feature of future cars (Figure 1). Over the past decades, with the advance of new technologies in communication and robotics, there is an improvement of autonomous driving technique and an explode of its commercial application. The key technique to aid autonomous driving is the modern driving assistance systems, such as Radar, Lidar, GPS and of course, computer vision techniques (Zhao, Liang et al. 2018).
 
-<img src="/display/figure1.jpg" alt="figure1"/>
+<img src="/display/figure1.jpg" alt="figure1" align="center"/>
 
 **Figure 1 Autonomous driving as the key feature of future cars. No/minor human manipulation and real-time surroundings detection are major components of future cars. Figure adapted from http://automotiveplastics.com/mobility-trends/autonomy.**
 
@@ -149,7 +149,7 @@ Figure 16 Performance evaluation of different steps and epoch. With more epochs 
 ### 3.1.3 Highly Dependent Different Scenario: Day/Night
 In the next step, we split our validation dataset into two groups, day-time group and night-time group. Not surprisingly, we found that the difference of mAP between two groups is significant (0.54 vs 0.38), which might be due to lighting and resolution at night time (Figure 17, 18).
 
-<img src="/display/figure17.png" alt="figure17"/>
+<img src="/display/figure17.png" alt="figure17" align="center"/>
 Figure 17 mAP varies for day-time and night-time images. Based on our optimized Mask-RCNN model, day-time mAP is as high as 0.54 but night-time mAP is only 0.38.
 <img src="/display/figure182.png" alt="figure182"/>
 Figure 18 Demon of segmentation from day-time and night-time images. We can observe some incorrect labeling in the night-time images, which are rarely found in day-time images.
@@ -158,7 +158,7 @@ Figure 18 Demon of segmentation from day-time and night-time images. We can obse
 
 Then we split the training data into day-time and night-time groups and train our Mask-RCNN model separately. This strategy, although slightly increased the mAP for night-time images, decreased the day-time images segmentation accuracy, which might be due to the relatively small of our dataset and shrink of the total images number in the separate training process (Figure 19, 20).
 
-<img src="/display/figure19.png" alt="figure19"/>
+<img src="/display/figure19.png" alt="figure19" align="center"/>
 Figure 19 Comparison of combined-training and separate-training for day and night time images segmentation. There is a minor difference between using the above two strategies, and getting more equal mAP when training separately.
 <img src="/display/figure20.png" alt="figure20" width="1000"/>
 Figure 20 Night-specific training improves mAP than the combined training model. (a) combined-training model for segmentation of night-time images (b) night-time specific images training model for segmentation of night-time images. We can see night-specific training outputted better results than the combined model.
