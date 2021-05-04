@@ -215,7 +215,7 @@ Figure 23: Compare the instance segmentation and object detection results based 
 # Future works: 
 ### Use larger dataset to see if the performance of mask-rcnn could be even better. 
 ### Transform the 10K dataset to the format that could be run by YOLOv5 and compare the object detection performance of related models 
-### We cannot precisely compare the time consumed each model since the traffic of the server varied and the hardware specification among servers is not the same. It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
+### It would be better that we’re able to find out a low peak period to get related metrics to evaluate. 
 ### Do more model tuning or modify the model structure to gain performance.
 
 
