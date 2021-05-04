@@ -101,7 +101,7 @@ In our study, we forked a Mask-RCNN code from a public Github repo  and made cha
 ### 2.4.3 YOLO
 Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 9). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
 <p align="center">
-<img src="/display/figure12.jpg" alt="figure12" width="600"/>
+<img src="/display/figure12.jpg" alt="figure12" height="500" width="500"/>
 </p>
 
 **Figure9: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications.**
