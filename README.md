@@ -9,7 +9,7 @@
 ## 1.1 Autonomous Driving 
 Self-driving car, also known as an autonomous vehicle, is a vehicle that senses its surrounding environment and is able to move safely with minor human input and manipulation (Bagloee, Tavana et al. 2016). Autonomous driving is one of the key feature of future cars (Figure 1). Over the past decades, with the advance of new technologies in communication and robotics, there is an improvement of autonomous driving technique and an explode of its commercial application. The key technique to aid autonomous driving is the modern driving assistance systems, such as Radar, Lidar, GPS and of course, computer vision techniques (Zhao, Liang et al. 2018).
 <p align="center">
-<img src="./display/figure1.jpg" alt="figure1" align="center"/>
+<img src="display/figure1.jpg" alt="figure1" align="center"/>
 </p>
 Figure1 Autonomous driving as the key feature of future cars. No or minor human manipulation and realtime surroundings detection are major components of future cars.
 
