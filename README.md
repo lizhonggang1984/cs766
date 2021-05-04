@@ -90,7 +90,7 @@ In our study, we referred to a model built in the mmdetction codebase, which is 
 
 ### 2.4.2 Mask-RCNN
 As shown in Figure 9, Mask R-CNN is a fully convolutional network added to the top of the CNN features of a faster R-CNN to generate a mask segmentation output. Compared to Fast-RCNN, Mask R-CNN has an additional branch for predicting segmentation masks on each ROI in a pixel to pixel manner. ROI Align is used to align the ROI pool more precisely. After the generation of masks, ROI align combines them with classification and bounding boxes from faster R-CNN to generate the precise segmentation (Ahmed, Gulliver et al. 2020). The current version of Mask-RCNN is using Tensorflow and Keras for its library and best use GPU for its computation due to the large parameter numbers, 
-<img src="/display/figure9.png" alt="figure9"/>
+<img src="/display/figure9.png" alt="figure9" width = "1000"/>
 
 **Figure 9 The Mask R-CNN framework for instance segmentation.**
 
@@ -98,14 +98,8 @@ In our study, we forked a Mask-RCNN code from a public Github repo  and made cha
 
 ### 2.4.3 YOLO
 Compared to Faster-RCNN and Mask-RCNN, you only look once (YOLO) is a lightweight, easy implemented, training quickly and inference quickly model. Due to its speed in real-time detection, it is considered the first choice for real-time object detection among many computer vision and machine learning experts and this is simply because of it’s the state-of-the-art real-time object detection algorithm in terms of performance (FPS), ease of use (setting up and configurations) and versatility (models can be converted to serve different devices, such as iOS or Android) (Figure 11). The naive version of YOLO models are basically composed of convolution layers, while the structure becomes more complex to achieve data augmentation and computation efficiency. 
- 
-<img src="/display/figure10.png" alt="figure10"/>
-**Figure 10: The YOLOV1 main structure**
 
-<img src="/display/figure11.jpg" alt="figure11"/>
-**Figure 11: The YOLOV5 main structure**
-
-<img src="/display/figure12.jpg" alt="figure12"/>
+<img src="/display/figure12.jpg" alt="figure12" width="800"/>
 
 **Figure 12: The YOLOV5 for realtime detection. YOLO is considered as the first choice in real time segmentation task and widely used in iPhone and Android applications. This figure is adapted from https://www.techleer.com/articles.**
 
